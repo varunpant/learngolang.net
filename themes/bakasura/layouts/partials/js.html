@@ -8,7 +8,14 @@
 {{ end }}
 
 {{ if .Site.Params.enableGoogleAnalytics }}
-  {{ template "_internal/google_analytics.html" . }}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ .Site.Params.googleAnalytics }}');
+</script>
 {{ end }}
 
 {{ if .Site.Params.enableBaiduAnalytics }}

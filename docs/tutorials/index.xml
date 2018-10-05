@@ -1,39 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tutorials on Go tutorials and examples.</title>
-    <link>https://learngolang.net/tutorials/</link>
-    <description>Recent content in Tutorials on Go tutorials and examples.</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 05 Oct 2018 10:11:33 +0100</lastBuildDate>
-    
-	<atom:link href="https://learngolang.net/tutorials/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>How to create a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</link>
-      <pubDate>Fri, 05 Oct 2018 10:11:33 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</guid>
-      <description>Go lets you easily create and write a new file.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Go tutorials and examples.</title><link>https://learngolang.net/tutorials/</link><description>Recent content in Tutorials on Go tutorials and examples.</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 05 Oct 2018 10:11:33 +0100</lastBuildDate><atom:link href="https://learngolang.net/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>How to create a file in go</title><link>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 10:11:33 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</guid><description>Go lets you easily create and write a new file.
 Here is an example using create from os package.
-package main import &amp;quot;os&amp;quot; func main() { //create a file f, err := os.Create(&amp;quot;foo&amp;quot;) if err != nil { panic(err) } //make sure it closes. defer f.Close() }  os.Create creates a file with default mode 0666 , and default file descriptor as O_RDWR .
+package main import &amp;quot;os&amp;quot; func main() { //create a file f, err := os.Create(&amp;quot;foo&amp;quot;) if err != nil { panic(err) } //make sure it closes. defer f.Close() } os.Create creates a file with default mode 0666 , and default file descriptor as O_RDWR .
 Here is another explicit example
-package main import &amp;quot;os&amp;quot; func main() { f, err := os.</description>
-    </item>
-    
-    <item>
-      <title>How to check if a file exists in go</title>
-      <link>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</link>
-      <pubDate>Tue, 01 Aug 2017 18:02:05 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</guid>
-      <description>Here is a quick snippet to check if a file exists in go
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { if _, err := os.Stat(&amp;quot;somefile&amp;quot;); os.IsNotExist(err) { fmt.Println(&amp;quot;path to \&amp;quot;somefile\&amp;quot; does not exist&amp;quot;) } }  In an edge case a file might disappear between an exist check and open
-So, it might be a good idea to always open a file and check for returned err.</description>
-    </item>
-    
-  </channel>
-</rss>
+package main import &amp;quot;os&amp;quot; func main() { f, err := os.</description></item><item><title>How to check if a file exists in go</title><link>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</link><pubDate>Tue, 01 Aug 2017 18:02:05 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</guid><description>Here is a quick snippet to check if a file exists in go
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { if _, err := os.Stat(&amp;quot;somefile&amp;quot;); os.IsNotExist(err) { fmt.Println(&amp;quot;path to \&amp;quot;somefile\&amp;quot; does not exist&amp;quot;) } } In an edge case a file might disappear between an exist check and open
+So, it might be a good idea to always open a file and check for returned err.</description></item></channel></rss>

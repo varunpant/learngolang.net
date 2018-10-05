@@ -1,5 +1,27 @@
 baseURL = "https://learngolang.net/"
 languageCode = "en-us"
-title = "Go-lang tutorials."
+title = "Go tutorials and examples."
 theme = "bakasura"
 publishDir = "docs"
+
+
+[params]
+	author = "gopher"
+	description = "Learn go by example."
+	bio = "hamster"
+
+	enableRSS = true
+	enableToc = false
+
+	enableDisqus = true
+	disqusShortname = "learngolang-net"
+
+	googleAnalytics = "UA-16978408-4"
+
+	enableSummary = false
+	# Set the value to true if use description in post front matter replace content summary
+	useDescriptionReplaceSummary = false
+
+
+	enableGoogleAnalytics = true
+
