@@ -29,7 +29,7 @@ If the file does not exist, it can be detected by `os.IsNotExist(err)` and  non-
 A better approach could be use `os.OpenFile` and try to **open** or **create** a file. This would only throw an error if a file already exists.
 
 ```golang
-ackage main
+package main
 
 import (
 	"fmt"
