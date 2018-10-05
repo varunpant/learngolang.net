@@ -17,7 +17,7 @@ func main() {
 		fmt.Println(&quot;path to \&quot;somefile\&quot; does not exist&quot;)
 	}
 }
-</code></pre><p>In an edge case a file might disappear between an <strong>exist</strong> check and <strong>open</strong></p><p>So, it might be a good idea to always open a file and check for returned <code>err</code>.</p><p>If the file does not exist, it can be detected by <code>os.IsNotExist(err)</code> and non-existence can be handled there.</p><p>A better approach could be use <code>os.OpenFile</code> and try to <strong>open</strong> or <strong>create</strong> a file. This would only throw an error if a file already exists.</p><pre><code class=language-golang>ackage main
+</code></pre><p>In an edge case a file might disappear between an <strong>exist</strong> check and <strong>open</strong></p><p>So, it might be a good idea to always open a file and check for returned <code>err</code>.</p><p>If the file does not exist, it can be detected by <code>os.IsNotExist(err)</code> and non-existence can be handled there.</p><p>A better approach could be use <code>os.OpenFile</code> and try to <strong>open</strong> or <strong>create</strong> a file. This would only throw an error if a file already exists.</p><pre><code class=language-golang>package main
 
 import (
 	&quot;fmt&quot;
