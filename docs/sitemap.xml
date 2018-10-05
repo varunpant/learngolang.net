@@ -3,17 +3,29 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</loc>
+    <lastmod>2018-10-05T10:11:33+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://learngolang.net/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://learngolang.net/</loc>
+    <lastmod>2018-10-05T10:11:33+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://learngolang.net/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://learngolang.net/tutorials/</loc>
+    <lastmod>2018-10-05T10:11:33+01:00</lastmod>
     <priority>0</priority>
   </url>
   
