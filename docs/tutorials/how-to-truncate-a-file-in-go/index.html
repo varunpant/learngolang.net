@@ -1,0 +1,25 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content=gopher><meta name=description content="Learn go by example."><meta name=generator content="Hugo 0.49"><title>How to Truncate a File in Go &middot; Go tutorials and examples.</title><link rel="shortcut icon" href=https://learngolang.net/images/favicon.ico><link rel=stylesheet href=https://learngolang.net/css/style.css><link rel=stylesheet href=https://learngolang.net/css/highlight.css><link rel=stylesheet href=https://learngolang.net/css/monosocialiconsfont.css><link href=https://learngolang.net/index.xml rel=alternate type=application/rss+xml title="Go tutorials and examples."></head><body><nav class=main-nav><a href=https://learngolang.net/><span class=arrow>←</span>Home</a>
+<a href=https://learngolang.net/tutorials>Archive</a>
+<a href=https://learngolang.net/tags>Tags</a>
+<a href=https://learngolang.net/about>About</a>
+<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>How to Truncate a File in Go</h1><h2 class=headline>Oct 5, 2018 22:33
+· 112 words
+· 1 minute read
+<span class=tags></span></h2></header><section id=post-body><p>Truncating a file is very rare but incase yer wondering how to do it in go, here is a snippet.</p><p>This code will truncate a file to 50 bytes.
+If the file is less than 50 bytes the original contents will remain
+at the beginning, and the rest of the space is filled will null bytes.</p><p>If it is over 50 bytes, then everything after 50 bytes will be lost.</p><p><code>Truncate</code> ensures that the file size is exactly as specified.</p><p><em>Pass in 0 to truncate to a completely empty file</em></p><pre><code class=language-golang>package main
+
+import (
+    &quot;log&quot;
+    &quot;os&quot;
+)
+
+func main() {
+    
+    err := os.Truncate(&quot;foo.text&quot;, 50)
+    if err != nil {
+        log.Fatal(err)
+    }
+}
+</code></pre></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2018 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-16978408-4');</script></body></html>
