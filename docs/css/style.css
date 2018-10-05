@@ -117,7 +117,9 @@ html, body {
 
 body {
     font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #666;
+    font-size: 1rem !important; 
+    line-height: 1.5;
+    color: #212529 !important;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -171,9 +173,8 @@ h2 {
 }
 
 nav.main-nav {
-    padding: 20px 20px 0;
-    background: #fff;
-    background: rgba(255, 255, 255, .90);
+    padding: 20px;
+    background: #0F3B68;
     margin: 0 auto;
     text-align: right;
     z-index: 100;
@@ -183,10 +184,11 @@ nav.main-nav a {
     top: 8px;
     right: 6px;
     padding: 8px 12px;
-    color: #5badf0;
-    font-size: 13px;
+    color: #fff;
+    font-size: 15px;
     line-height: 1.35;
     border-radius: 3px;
+    font-weight: bold;
 }
 
 nav.main-nav a.cta {
@@ -251,7 +253,7 @@ a, #title, #post-list a:hover, #title:hover {
 }
 
 p a {
-    color: #5694f1;
+    color: #0056b3;
 }
 
 
@@ -285,6 +287,11 @@ ul>li {
 
 #post-body, p {
     line-height: 1.7;
+    font-size: 1rem !important;
+    font-weight: 400 !important; 
+    color: #212529 !important;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 #post-body p > a {
   word-break: break-word;
@@ -508,7 +515,7 @@ Post List
     position: relative;
     top: 1px;
     font: 300 17px/1.8 "Helvetica Neue", helvetica, Arial, sans-serif;
-    color: #bbb;
+    color: #000;
 }
 
 #post-list-footer {
