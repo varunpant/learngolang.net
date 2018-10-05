@@ -1,0 +1,83 @@
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content=gopher><meta name=description content="Learn go by example."><meta name=generator content="Hugo 0.49"><title>How to write a file in go &middot; Go tutorials and examples.</title><link rel="shortcut icon" href=https://learngolang.net/images/favicon.ico><link rel=stylesheet href=https://learngolang.net/css/style.css><link rel=stylesheet href=https://learngolang.net/css/highlight.css><link rel=stylesheet href=https://learngolang.net/css/monosocialiconsfont.css><link href=https://learngolang.net/index.xml rel=alternate type=application/rss+xml title="Go tutorials and examples."></head><body><nav class=main-nav><a href=https://learngolang.net/><span class=arrow>←</span>Home</a>
+<a href=https://learngolang.net/tutorials>Archive</a>
+<a href=https://learngolang.net/tags>Tags</a>
+<a href=https://learngolang.net/about>About</a>
+<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>How to write a file in go</h1><h2 class=headline>Oct 5, 2017 21:21
+· 260 words
+· 2 minute read
+<span class=tags></span></h2></header><section id=post-body><p>The quickest way to write a file with some bytes is to use <code>ioutil.WriteFile</code></p><pre><code class=language-golang>package main
+
+import (
+	&quot;fmt&quot;
+	&quot;io/ioutil&quot;
+)
+
+func main() {
+	err := ioutil.WriteFile(&quot;somefile&quot;, []byte(&quot;foo\n&quot;), 0644)
+	if err != nil {
+		fmt.Println(&quot;error while writing file&quot;)
+	}
+}
+</code></pre><p>A more explicit way could be to use <code>os.Create</code></p><pre><code class=language-golang>package main
+
+import (
+	&quot;fmt&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	f, err := os.Create(&quot;foo.dat&quot;)
+	if err != nil {
+		fmt.Println(&quot;error while creating file&quot;)
+	}
+	defer f.Close()
+
+	l, err := f.Write([]byte(&quot;hello&quot;))
+	if err != nil {
+		fmt.Println(&quot;error while creating file&quot;)
+	}
+	fmt.Printf(&quot;wrote %d bytes\n&quot;, l)
+}
+</code></pre><p>If you just want to write some string instead of byte array then just use <code>WriteString</code></p><pre><code class=language-golang>package main
+
+import (
+	&quot;fmt&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	f, err := os.Create(&quot;foo.dat&quot;)
+	if err != nil {
+		fmt.Println(&quot;error while creating file&quot;)
+	}
+	defer f.Close()
+
+	l, err := f.WriteString(&quot;foo bar\n&quot;)
+	if err != nil {
+		fmt.Println(&quot;error while creating file&quot;)
+	}
+	fmt.Printf(&quot;wrote %d bytes\n&quot;, l)
+}
+
+</code></pre><p>If multiple write operations are performed then make sure to use <code>f.sync</code>, to flush writes to stable storage.</p><p>Finally its worth mentioning a package <code>buffio</code> which helps with <a href=https://www.quora.com/In-C-what-does-buffering-I-O-or-buffered-I-O-mean/answer/Robert-Love-1>bufferred IO operations</a>.</p><p>Many small writes can hurt performance, hence a common strategy is to buffer few writes in memory and then write a chunk to the disk as a single block.</p><pre><code class=language-golang>package main
+
+import (
+	&quot;bufio&quot;
+	&quot;fmt&quot;
+	&quot;os&quot;
+)
+
+func main() {
+	f, err := os.Create(&quot;foo.dat&quot;)
+	if err != nil {
+		fmt.Println(&quot;error while creating file&quot;)
+	}
+	defer f.Close()
+
+	w := bufio.NewWriter(f)
+	l, err := w.WriteString(&quot;bufferred data\n&quot;)
+	w.Flush() //write to storge.
+	fmt.Printf(&quot;wrote %d bytes\n&quot;, l)
+}
+</code></pre></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2018 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-16978408-4');</script></body></html>
