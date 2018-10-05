@@ -1,0 +1,4 @@
+baseURL = "https://learngolang.net"
+languageCode = "en-us"
+title = "Go-lang tutorials."
+theme = "bakasura"
