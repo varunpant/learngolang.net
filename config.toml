@@ -8,7 +8,7 @@ publishDir = "docs"
 [params]
 	author = "gopher"
 	description = "Learn go by example."
-	bio = "hamster"
+	bio = ""
 
 	enableRSS = true
 	enableToc = false
@@ -24,4 +24,5 @@ publishDir = "docs"
 
 
 	enableGoogleAnalytics = true
+
 
