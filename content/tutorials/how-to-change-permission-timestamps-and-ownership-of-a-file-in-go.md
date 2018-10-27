@@ -1,6 +1,6 @@
 ---
 title: "How to change permission, timestamps and ownership of a file in go"
-date: 2017-07-05T21:21:19+01:00
+date: 2018-07-05T21:21:19+01:00
 draft: false
 ---
 

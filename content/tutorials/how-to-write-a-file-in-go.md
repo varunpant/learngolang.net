@@ -1,6 +1,6 @@
 ---
 title: "How to write a file in go"
-date: 2017-10-05T21:21:19+01:00
+date: 2018-10-05T21:21:19+01:00
 draft: false
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "How to delete a file in go"
-date: 2017-06-02T22:43:02+01:00
+date: 2018-06-02T22:43:02+01:00
 draft: false
 ---
 

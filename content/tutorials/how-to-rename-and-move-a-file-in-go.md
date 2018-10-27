@@ -1,6 +1,6 @@
 ---
 title: "How to rename and move a file in go"
-date: 2017-09-02T22:43:02+01:00
+date: 2018-09-02T22:43:02+01:00
 draft: false
 ---
 

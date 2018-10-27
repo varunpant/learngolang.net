@@ -1,6 +1,6 @@
 ---
 title: "How to copy a file in go"
-date: 2017-01-12T21:21:19+01:00
+date: 2018-01-12T21:21:19+01:00
 draft: false
 ---
 

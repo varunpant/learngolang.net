@@ -1,6 +1,6 @@
 ---
 title: "How to check file permissions in go"
-date: 2017-04-02T22:43:02+01:00
+date: 2018-04-02T22:43:02+01:00
 draft: false
 ---
 ```
