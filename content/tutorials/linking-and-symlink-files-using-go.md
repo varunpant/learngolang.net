@@ -1,6 +1,6 @@
 ---
 title: "Linking and symlink a file in go"
-date: 2018-02-02T21:21:19+01:00
+date: 2018-10-02T21:21:19+01:00
 draft: false
 ---
 

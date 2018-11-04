@@ -1,6 +1,6 @@
 ---
 title: "How to check if a file exists in go"
-date: 2018-08-01T18:02:05+01:00
+date: 2018-10-01T18:02:05+01:00
 draft: false
 ---
 

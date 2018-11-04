@@ -1,6 +1,6 @@
 ---
 title: "How to append in a file in go"
-date: 2018-09-05T22:20:24+01:00
+date: 2018-10-05T22:20:24+01:00
 draft: false
 ---
 
