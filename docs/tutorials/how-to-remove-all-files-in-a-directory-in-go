@@ -1,0 +1,20 @@
+---
+title: "How to Remove All Files in a Directory in Go"
+date: 2018-11-04T12:45:25Z
+draft: false
+---
+
+### Built in Options
+
+There, always is a need to delete all files in a directory in golang.
+
+`os.RemoveAll` function is used a lot. The documentation says,
+>RemoveAll removes path and any children it contains. It removes everything it can but returns the first error it encounters. If the path does not exist, RemoveAll returns nil (no error).
+
+#### Here is a quick example
+```golang
+func main() {
+	err := os.RemoveAll("files")
+	fmt.Println(err)
+}
+```

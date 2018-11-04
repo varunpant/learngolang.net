@@ -5,8 +5,6 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 # Build the project.
 hugo --minify
 
-# Go To docs folder
-cd docs
 # Add changes to git.
 git add .
 
