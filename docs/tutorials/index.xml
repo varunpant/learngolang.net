@@ -1,146 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tutorials on Go tutorials and examples.</title>
-    <link>https://learngolang.net/tutorials/</link>
-    <description>Recent content in Tutorials on Go tutorials and examples.</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 05 Oct 2018 22:33:21 +0100</lastBuildDate>
-    
-	<atom:link href="https://learngolang.net/tutorials/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>How to truncate a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</link>
-      <pubDate>Fri, 05 Oct 2018 22:33:21 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</guid>
-      <description>Truncating a file is very rare but incase yer wondering how to do it in go, here is a snippet.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Go tutorials and examples.</title><link>https://learngolang.net/tutorials/</link><description>Recent content in Tutorials on Go tutorials and examples.</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 04 Nov 2018 12:45:25 +0000</lastBuildDate><atom:link href="https://learngolang.net/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Remove All Files in a Directory in Go</title><link>https://learngolang.net/tutorials/how-to-remove-all-files-in-a-directory-in-go/</link><pubDate>Sun, 04 Nov 2018 12:45:25 +0000</pubDate><guid>https://learngolang.net/tutorials/how-to-remove-all-files-in-a-directory-in-go/</guid><description>Built in Options There, always is a need to delete all files in a directory in golang.
+os.RemoveAll function is used a lot. The documentation says,
+RemoveAll removes path and any children it contains. It removes everything it can but returns the first error it encounters. If the path does not exist, RemoveAll returns nil (no error).
+Here is a quick example func main() { err := os.</description></item><item><title>How to truncate a file in go</title><link>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 22:33:21 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</guid><description>Truncating a file is very rare but incase yer wondering how to do it in go, here is a snippet.
 This code will truncate a file to 50 bytes. If the file is less than 50 bytes the original contents will remain at the beginning, and the rest of the space is filled will null bytes.
-If it is over 50 bytes, then everything after 50 bytes will be lost.</description>
-    </item>
-    
-    <item>
-      <title>How to write a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</link>
-      <pubDate>Fri, 05 Oct 2018 21:21:19 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</guid>
-      <description>The quickest way to write a file with some bytes is to use ioutil.WriteFile
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;io/ioutil&amp;quot; ) func main() { err := ioutil.WriteFile(&amp;quot;somefile&amp;quot;, []byte(&amp;quot;foo\n&amp;quot;), 0644) if err != nil { fmt.Println(&amp;quot;error while writing file&amp;quot;) } }  A more explicit way could be to use os.Create
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { f, err := os.Create(&amp;quot;foo.dat&amp;quot;) if err != nil { fmt.Println(&amp;quot;error while creating file&amp;quot;) } defer f.</description>
-    </item>
-    
-    <item>
-      <title>How to create a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</link>
-      <pubDate>Fri, 05 Oct 2018 10:11:33 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</guid>
-      <description>Go lets you easily create and write a new file.
+If it is over 50 bytes, then everything after 50 bytes will be lost.</description></item><item><title>How to write a file in go</title><link>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</guid><description>The quickest way to write a file with some bytes is to use ioutil.WriteFile
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;io/ioutil&amp;quot; ) func main() { err := ioutil.WriteFile(&amp;quot;somefile&amp;quot;, []byte(&amp;quot;foo\n&amp;quot;), 0644) if err != nil { fmt.Println(&amp;quot;error while writing file&amp;quot;) } } A more explicit way could be to use os.Create
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { f, err := os.Create(&amp;quot;foo.dat&amp;quot;) if err != nil { fmt.Println(&amp;quot;error while creating file&amp;quot;) } defer f.</description></item><item><title>How to create a file in go</title><link>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 10:11:33 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</guid><description>Go lets you easily create and write a new file.
 Here is an example using create from os package.
-package main import &amp;quot;os&amp;quot; func main() { //create a file f, err := os.Create(&amp;quot;foo&amp;quot;) if err != nil { panic(err) } //make sure it closes. defer f.Close() }  os.Create creates a file with default mode 0666 , and default file descriptor as O_RDWR .
+package main import &amp;quot;os&amp;quot; func main() { //create a file f, err := os.Create(&amp;quot;foo&amp;quot;) if err != nil { panic(err) } //make sure it closes. defer f.Close() } os.Create creates a file with default mode 0666 , and default file descriptor as O_RDWR .
 Here is another explicit example
-package main import &amp;quot;os&amp;quot; func main() { f, err := os.</description>
-    </item>
-    
-    <item>
-      <title>How to get fileinfo in go</title>
-      <link>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</link>
-      <pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</guid>
-      <description>os.stat is used in golang to get all the meta information about a file.
+package main import &amp;quot;os&amp;quot; func main() { f, err := os.</description></item><item><title>How to get fileinfo in go</title><link>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</link><pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</guid><description>os.stat is used in golang to get all the meta information about a file.
 os.stat will return a fileinfo object or an error if the file is not found.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { fileInfo, err := os.Stat(&amp;quot;myfile.txt&amp;quot;) if err != nil { log.Fatal(err) } fmt.Println(&amp;quot;File name:&amp;quot;, fileInfo.Name()) fmt.Println(&amp;quot;Size in bytes:&amp;quot;, fileInfo.Size()) fmt.Println(&amp;quot;Permissions:&amp;quot;, fileInfo.Mode()) fmt.Println(&amp;quot;Last modified:&amp;quot;, fileInfo.ModTime()) fmt.Println(&amp;quot;Is Directory: &amp;quot;, fileInfo.IsDir()) fmt.Printf(&amp;quot;System interface type: %T\n&amp;quot;, fileInfo.</description>
-    </item>
-    
-    <item>
-      <title>How to append in a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</link>
-      <pubDate>Wed, 05 Sep 2018 22:20:24 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</guid>
-      <description>Here is a snippet which shows how to append data in a file in golang.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { fileInfo, err := os.Stat(&amp;quot;myfile.txt&amp;quot;) if err != nil { log.Fatal(err) } fmt.Println(&amp;quot;File name:&amp;quot;, fileInfo.Name()) fmt.Println(&amp;quot;Size in bytes:&amp;quot;, fileInfo.Size()) fmt.Println(&amp;quot;Permissions:&amp;quot;, fileInfo.Mode()) fmt.Println(&amp;quot;Last modified:&amp;quot;, fileInfo.ModTime()) fmt.Println(&amp;quot;Is Directory: &amp;quot;, fileInfo.IsDir()) fmt.Printf(&amp;quot;System interface type: %T\n&amp;quot;, fileInfo.</description></item><item><title>How to append in a file in go</title><link>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</link><pubDate>Wed, 05 Sep 2018 22:20:24 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</guid><description>Here is a snippet which shows how to append data in a file in golang.
 We will use os.OpenFile with os._APPEND flag.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { for i := 0; i &amp;lt; 10; i++ { append(fmt.Sprintf(&amp;quot;line %d \n&amp;quot;, i)) } } func append(text string) { f, err := os.OpenFile(&amp;quot;myfile.txt&amp;quot;, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644) if err != nil { panic(err) } defer f.Close() f.WriteString(text) }  Here is a handly list of other flags which can be combined togther and used</description>
-    </item>
-    
-    <item>
-      <title>How to rename and move a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</link>
-      <pubDate>Sun, 02 Sep 2018 22:43:02 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</guid>
-      <description>To rename a file there is os.Rename method, which takes original name and the new name.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { oldname := &amp;quot;file1.txt&amp;quot; newname := &amp;quot;file2.txt&amp;quot; err := os.Rename(oldname, newname) if err != nil { fmt.Println(err) } }  The same method can be used to move the file as well.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { originalPath := &amp;quot;file1.txt&amp;quot; newPath := &amp;quot;/some/other/folder/file2.</description>
-    </item>
-    
-    <item>
-      <title>How to check if a file exists in go</title>
-      <link>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</link>
-      <pubDate>Wed, 01 Aug 2018 18:02:05 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</guid>
-      <description>Here is a quick snippet to check if a file exists in go
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { if _, err := os.Stat(&amp;quot;somefile&amp;quot;); os.IsNotExist(err) { fmt.Println(&amp;quot;path to \&amp;quot;somefile\&amp;quot; does not exist&amp;quot;) } }  In an edge case a file might disappear between an exist check and open
-So, it might be a good idea to always open a file and check for returned err.</description>
-    </item>
-    
-    <item>
-      <title>How to change permission, timestamps and ownership of a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</link>
-      <pubDate>Thu, 05 Jul 2018 21:21:19 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</guid>
-      <description>Change Permission Package os, has a handy Chmod method, just like the command line interface in Linux .
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chmod(&amp;quot;myfile.txt&amp;quot;, 0777) if err != nil { fmt.Println(err) } }  Change Ownership There is also a Chown
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chown(&amp;quot;myFile.txt&amp;quot;, os.Getuid(), os.Getgid()) if err != nil { fmt.Println(err) } }  Change timestamps As well as a Chtimes</description>
-    </item>
-    
-    <item>
-      <title>How to delete a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</link>
-      <pubDate>Sat, 02 Jun 2018 22:43:02 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</guid>
-      <description>The os package has os.Remove function, which is used to delete a file as shown below.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Remove(&amp;quot;test.txt&amp;quot;) if err != nil { fmt.Println(err) } }  </description>
-    </item>
-    
-    <item>
-      <title>How to check file permissions in go</title>
-      <link>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</link>
-      <pubDate>Mon, 02 Apr 2018 22:43:02 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</guid>
-      <description>package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { var perms = []int{os.O_RDONLY, os.O_WRONLY} for perm := range perms { file, err := os.OpenFile(&amp;quot;myFile.txt&amp;quot;, perm, 0666) if err != nil { if os.IsNotExist(err) { panic(&amp;quot;File not found.&amp;quot;) } if os.IsPermission(err) { fmt.Println(fmt.Sprintf(&amp;quot;Error: %v permission denied.&amp;quot;, perm)) } } file.Close() } }  </description>
-    </item>
-    
-    <item>
-      <title>Linking and symlink a file in go</title>
-      <link>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</link>
-      <pubDate>Fri, 02 Feb 2018 21:21:19 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</guid>
-      <description>A Link in Linux is just a pointer to a file or a directory.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { for i := 0; i &amp;lt; 10; i++ { append(fmt.Sprintf(&amp;quot;line %d \n&amp;quot;, i)) } } func append(text string) { f, err := os.OpenFile(&amp;quot;myfile.txt&amp;quot;, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644) if err != nil { panic(err) } defer f.Close() f.WriteString(text) } Here is a handly list of other flags which can be combined togther and used</description></item><item><title>How to rename and move a file in go</title><link>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</link><pubDate>Sun, 02 Sep 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</guid><description>To rename a file there is os.Rename method, which takes original name and the new name.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { oldname := &amp;quot;file1.txt&amp;quot; newname := &amp;quot;file2.txt&amp;quot; err := os.Rename(oldname, newname) if err != nil { fmt.Println(err) } } The same method can be used to move the file as well.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { originalPath := &amp;quot;file1.txt&amp;quot; newPath := &amp;quot;/some/other/folder/file2.</description></item><item><title>How to check if a file exists in go</title><link>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</link><pubDate>Wed, 01 Aug 2018 18:02:05 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</guid><description>Here is a quick snippet to check if a file exists in go
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { if _, err := os.Stat(&amp;quot;somefile&amp;quot;); os.IsNotExist(err) { fmt.Println(&amp;quot;path to \&amp;quot;somefile\&amp;quot; does not exist&amp;quot;) } } In an edge case a file might disappear between an exist check and open
+So, it might be a good idea to always open a file and check for returned err.</description></item><item><title>How to change permission, timestamps and ownership of a file in go</title><link>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</link><pubDate>Thu, 05 Jul 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</guid><description>Change Permission Package os, has a handy Chmod method, just like the command line interface in Linux .
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chmod(&amp;quot;myfile.txt&amp;quot;, 0777) if err != nil { fmt.Println(err) } } Change Ownership There is also a Chown
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chown(&amp;quot;myFile.txt&amp;quot;, os.Getuid(), os.Getgid()) if err != nil { fmt.Println(err) } } Change timestamps As well as a Chtimes</description></item><item><title>How to delete a file in go</title><link>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</link><pubDate>Sat, 02 Jun 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</guid><description>The os package has os.Remove function, which is used to delete a file as shown below.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Remove(&amp;quot;test.txt&amp;quot;) if err != nil { fmt.Println(err) } }</description></item><item><title>How to check file permissions in go</title><link>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</link><pubDate>Mon, 02 Apr 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</guid><description>package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { var perms = []int{os.O_RDONLY, os.O_WRONLY} for perm := range perms { file, err := os.OpenFile(&amp;quot;myFile.txt&amp;quot;, perm, 0666) if err != nil { if os.IsNotExist(err) { panic(&amp;quot;File not found.&amp;quot;) } if os.IsPermission(err) { fmt.Println(fmt.Sprintf(&amp;quot;Error: %v permission denied.&amp;quot;, perm)) } } file.Close() } }</description></item><item><title>Linking and symlink a file in go</title><link>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</link><pubDate>Fri, 02 Feb 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</guid><description>A Link in Linux is just a pointer to a file or a directory.
 A hardlink is a new pointer to the same file, hard links actually have file contents.
 A softlink does not point directly to the file, and is only a reference. softlinks are also called symlink
-Hard Linking in golang package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Link(&amp;quot;original.txt&amp;quot;, &amp;quot;hardlink.txt&amp;quot;) if err !</description>
-    </item>
-    
-    <item>
-      <title>How to copy a file in go</title>
-      <link>https://learngolang.net/tutorials/how-to-copy-file-in-go/</link>
-      <pubDate>Fri, 12 Jan 2018 21:21:19 +0100</pubDate>
-      
-      <guid>https://learngolang.net/tutorials/how-to-copy-file-in-go/</guid>
-      <description>Here is a snippet, which copies a file from source to destination.
-package main import ( &amp;quot;io&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { // Open original file source, err := os.Open(&amp;quot;foo.txt&amp;quot;) if err != nil { log.Fatal(err) } defer source.Close() // Create new file destination, err := os.Create(&amp;quot;bar.txt&amp;quot;) if err != nil { log.Fatal(err) } defer destination.Close() // Copy the bytes to destination from source bytesWritten, err := io.Copy(destination, source) if err !</description>
-    </item>
-    
-  </channel>
-</rss>
+Hard Linking in golang package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Link(&amp;quot;original.txt&amp;quot;, &amp;quot;hardlink.txt&amp;quot;) if err !</description></item><item><title>How to copy a file in go</title><link>https://learngolang.net/tutorials/how-to-copy-file-in-go/</link><pubDate>Fri, 12 Jan 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-copy-file-in-go/</guid><description>Here is a snippet, which copies a file from source to destination.
+package main import ( &amp;quot;io&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { // Open original file source, err := os.Open(&amp;quot;foo.txt&amp;quot;) if err != nil { log.Fatal(err) } defer source.Close() // Create new file destination, err := os.Create(&amp;quot;bar.txt&amp;quot;) if err != nil { log.Fatal(err) } defer destination.Close() // Copy the bytes to destination from source bytesWritten, err := io.Copy(destination, source) if err !</description></item></channel></rss>
