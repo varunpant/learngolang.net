@@ -3,7 +3,7 @@ title: "How to check file permissions in go"
 date: 2018-10-02T22:43:02+01:00
 draft: false
 ---
-```
+```golang
 package main
 
 import (
