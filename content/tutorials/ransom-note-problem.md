@@ -1,6 +1,6 @@
 ---
 title: "How to solve ransom note problem in go"
-date: 2019-21-04T21:21:19+01:00
+date: 2019-04-21T21:21:19+01:00
 draft: false
 ---
 
