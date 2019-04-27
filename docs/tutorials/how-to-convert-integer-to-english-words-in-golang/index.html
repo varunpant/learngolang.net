@@ -2,9 +2,54 @@
 <a href=https://learngolang.net/tutorials>Archive</a>
 <a href=https://learngolang.net/tags>Tags</a>
 <a href=https://learngolang.net/about>About</a>
-<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>How to convert integer to english words in go</h1><h2 class=headline>Apr 21, 2019 21:21
-· 9 words
+<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>How to convert integer to english words in go</h1><h2 class=headline>Apr 26, 2019 22:20
+· 168 words
 · 1 minute read
-<span class=tags></span></h2></header><section id=post-body><p>The following code converts number to their english spelling.</p><pre><code class=language-golang>
+<span class=tags></span></h2></header><section id=post-body><p>The following code converts number to their english spelling.</p><pre><code class=language-golang>package main
+
+import (
+	&quot;fmt&quot;
+	&quot;math&quot;
+)
+
+func main() {
+	for i := 0; i &lt;= 10000; i++ {
+		fmt.Println(i, spell(i))
+	}
+	// i := 88
+	// fmt.Println(i, spell(i))
+}
+
+func pow(i int, p int) int {
+	return int(math.Pow(1000, float64(p)))
+}
+
+func spell(n int) string {
+	to19 := []string{&quot;One&quot;, &quot;Two&quot;, &quot;Three&quot;, &quot;Four&quot;, &quot;Five&quot;, &quot;Six&quot;, &quot;Seven&quot;, &quot;Eight&quot;, &quot;Nine&quot;, &quot;Ten&quot;, &quot;Eleven&quot;, &quot;Twelve&quot;,
+		&quot;,Thirteen&quot;, &quot;Fourteen&quot;, &quot;Fifteen&quot;, &quot;Sixteen&quot;, &quot;Seventeen&quot;, &quot;Eighteen&quot;, &quot;Nineteen&quot;}
+
+	tens := []string{&quot;Twenty&quot;, &quot;Thirty&quot;, &quot;Forty&quot;, &quot;Fifty&quot;, &quot;Sixty&quot;, &quot;Seventy&quot;, &quot;Eighty&quot;, &quot;Ninety&quot;}
+	if n == 0 {
+		return &quot;&quot;
+	}
+	if n &lt; 20 {
+		return to19[n-1]
+	}
+	if n &lt; 100 {
+		return tens[n/10-2] + &quot; &quot; + spell(n%10)
+	}
+	if n &lt; 1000 {
+		return to19[n/100-1] + &quot; Hundred &quot; + spell(n%100)
+	}
+
+	for idx, w := range []string{&quot;Thousand&quot;, &quot;Million&quot;, &quot;Billion&quot;} {
+		p := idx + 1
+		if n &lt; pow(1000, (p+1)) {
+			return spell(n/pow(1000, p)) + &quot; &quot; + w + &quot; &quot; + spell(n%pow(1000, p))
+		}
+	}
+
+	return &quot;error&quot;
+}
 </code></pre></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2019 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','UA-16978408-4');</script></body></html>
