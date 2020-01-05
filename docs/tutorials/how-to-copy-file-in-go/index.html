@@ -1,163 +1,47 @@
-<!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<meta name="author" content="gopher">
-		<meta name="description" content="Learn go by example.">
-		<meta name="generator" content="Hugo 0.59.1" />
-		<title>How to copy a file in go &middot; Go tutorials and examples.</title>
-		<link rel="shortcut icon" href="https://learngolang.net/images/favicon.ico">
-		<link rel="stylesheet" href="https://learngolang.net/css/style.css">
-		<link rel="stylesheet" href="https://learngolang.net/css/highlight.css">
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="gopher"><meta name=description content="Learn go by example."><meta name=generator content="Hugo 0.61.0"><title>How to copy a file in go &#183; Go tutorials and examples.</title><link rel="shortcut icon" href=https://learngolang.net/images/favicon.ico><link rel=stylesheet href=https://learngolang.net/css/style.css><link rel=stylesheet href=https://learngolang.net/css/highlight.css><link rel=stylesheet href=https://learngolang.net/css/monosocialiconsfont.css><link href=https://learngolang.net/index.xml rel=alternate type=application/rss+xml title="Go tutorials and examples."></head><body><nav class=main-nav><a href=https://learngolang.net/><span class=arrow>←</span>Home</a>
+<a href=https://learngolang.net/tutorials>Archive</a>
+<a href=https://learngolang.net/tags>Tags</a>
+<a href=https://learngolang.net/about>About</a>
+<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>How to copy a file in go</h1><h2 class=headline>Oct 12, 2018 21:21
+· 102 words
+· 1 minute read
+<span class=tags></span></h2></header><section id=post-body><p>Here is a snippet, which copies a file from source to destination.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
 
-		
-		<link rel="stylesheet" href="https://learngolang.net/css/monosocialiconsfont.css">
-		
-
-		
-		<link href="https://learngolang.net/index.xml" rel="alternate" type="application/rss+xml" title="Go tutorials and examples." />
-		
-
-		
-	</head>
-
-    <body>
-       <nav class="main-nav">
-	
-	
-		<a href='https://learngolang.net/'> <span class="arrow">←</span>Home</a>
-	
-	<a href='https://learngolang.net/tutorials'>Archive</a>
-	<a href='https://learngolang.net/tags'>Tags</a>
-	<a href='https://learngolang.net/about'>About</a>
-
-	
-
-	
-	<a class="cta" href="https://learngolang.net/index.xml">Subscribe</a>
-	
-</nav>
-
-
-        <section id="wrapper" class="post">
-            <article>
-                <header>
-                    <h1>
-                        How to copy a file in go
-                    </h1>
-                    <h2 class="headline">
-                    Oct 12, 2018 21:21
-                    · 102 words
-                    · 1 minute read
-                      <span class="tags">
-                      
-                      </span>
-                    </h2>
-                </header>
-                
-                <section id="post-body">
-                    <p>Here is a snippet, which copies a file from source to destination.</p>
-
-<pre><code class="language-golang">package main
-
-import (
-	&quot;io&quot;
-	&quot;log&quot;
-	&quot;os&quot;
+<span style=color:#f92672>import</span> (
+	<span style=color:#e6db74>&#34;io&#34;</span>
+	<span style=color:#e6db74>&#34;log&#34;</span>
+	<span style=color:#e6db74>&#34;os&#34;</span>
 )
 
-func main() {
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
 
-	// Open original file
-	source, err := os.Open(&quot;foo.txt&quot;)
-	if err != nil {
-		log.Fatal(err)
+	<span style=color:#75715e>// Open original file
+</span><span style=color:#75715e></span>	<span style=color:#a6e22e>source</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>os</span>.<span style=color:#a6e22e>Open</span>(<span style=color:#e6db74>&#34;foo.txt&#34;</span>)
+	<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+		<span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
 	}
-	defer source.Close()
+	<span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>source</span>.<span style=color:#a6e22e>Close</span>()
 
-	// Create new file
-	destination, err := os.Create(&quot;bar.txt&quot;)
-	if err != nil {
-		log.Fatal(err)
+	<span style=color:#75715e>// Create new file
+</span><span style=color:#75715e></span>	<span style=color:#a6e22e>destination</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>os</span>.<span style=color:#a6e22e>Create</span>(<span style=color:#e6db74>&#34;bar.txt&#34;</span>)
+	<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+		<span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
 	}
-	defer destination.Close()
+	<span style=color:#66d9ef>defer</span> <span style=color:#a6e22e>destination</span>.<span style=color:#a6e22e>Close</span>()
 
-	// Copy the bytes to destination from source
-	bytesWritten, err := io.Copy(destination, source)
-	if err != nil {
-		log.Fatal(err)
+	<span style=color:#75715e>// Copy the bytes to destination from source
+</span><span style=color:#75715e></span>	<span style=color:#a6e22e>bytesWritten</span>, <span style=color:#a6e22e>err</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>io</span>.<span style=color:#a6e22e>Copy</span>(<span style=color:#a6e22e>destination</span>, <span style=color:#a6e22e>source</span>)
+	<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+		<span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
 	}
-	log.Printf(&quot;Copied %d bytes.&quot;, bytesWritten)
+	<span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Printf</span>(<span style=color:#e6db74>&#34;Copied %d bytes.&#34;</span>, <span style=color:#a6e22e>bytesWritten</span>)
 
-	// Commit the file contents
-	// Flushes memory to disk
-	err = destination.Sync()
-	if err != nil {
-		log.Fatal(err)
+	<span style=color:#75715e>// Commit the file contents
+</span><span style=color:#75715e></span>	<span style=color:#75715e>// Flushes memory to disk
+</span><span style=color:#75715e></span>	<span style=color:#a6e22e>err</span> = <span style=color:#a6e22e>destination</span>.<span style=color:#a6e22e>Sync</span>()
+	<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>err</span> <span style=color:#f92672>!=</span> <span style=color:#66d9ef>nil</span> {
+		<span style=color:#a6e22e>log</span>.<span style=color:#a6e22e>Fatal</span>(<span style=color:#a6e22e>err</span>)
 	}
 }
-</code></pre>
-
-                </section>
-            </article>
-
-            
-
-            
-                <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'learngolang-net'; 
-
-     
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-            
-
-            
-
-            <footer id="footer">
-    
-    <p class="small">
-    
-       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> gopher
-    
-    </p>
-    <p class="small">
-        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/varunpant/hugo-theme-bakasura">Bakasura</a>
-    </p>
-</footer>
-
-        </section>
-
-        <script src="https://learngolang.net/js/jquery-3.3.1.min.js"></script>
-<script src="https://learngolang.net/js/main.js"></script>
-<script src="https://learngolang.net/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-16978408-4');
-</script>
-
-
-
-
-    </body>
-</html>
+</code></pre></div></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2020 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-16978408-4');</script></body></html>

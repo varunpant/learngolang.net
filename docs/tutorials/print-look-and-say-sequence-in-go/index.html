@@ -1,137 +1,57 @@
-<!DOCTYPE html>
-<html lang="en-us">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<meta name="author" content="gopher">
-		<meta name="description" content="Learn go by example.">
-		<meta name="generator" content="Hugo 0.59.1" />
-		<title>Print Look and Say Sequence in Go &middot; Go tutorials and examples.</title>
-		<link rel="shortcut icon" href="https://learngolang.net/images/favicon.ico">
-		<link rel="stylesheet" href="https://learngolang.net/css/style.css">
-		<link rel="stylesheet" href="https://learngolang.net/css/highlight.css">
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="gopher"><meta name=description content="Learn go by example."><meta name=generator content="Hugo 0.61.0"><title>Print Look and Say Sequence in Go &#183; Go tutorials and examples.</title><link rel="shortcut icon" href=https://learngolang.net/images/favicon.ico><link rel=stylesheet href=https://learngolang.net/css/style.css><link rel=stylesheet href=https://learngolang.net/css/highlight.css><link rel=stylesheet href=https://learngolang.net/css/monosocialiconsfont.css><link href=https://learngolang.net/index.xml rel=alternate type=application/rss+xml title="Go tutorials and examples."></head><body><nav class=main-nav><a href=https://learngolang.net/><span class=arrow>←</span>Home</a>
+<a href=https://learngolang.net/tutorials>Archive</a>
+<a href=https://learngolang.net/tags>Tags</a>
+<a href=https://learngolang.net/about>About</a>
+<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>Print Look and Say Sequence in Go</h1><h2 class=headline>May 5, 2019 23:17
+· 244 words
+· 2 minute read
+<span class=tags></span></h2></header><section id=post-body><h1 id=look-and-say-sequence>Look-and-say sequence</h1><p>In mathematics, the look-and-say sequence is the sequence of integers beginning as follows:</p><p><code>1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, ...</code></p><p>To generate a member of the sequence from the previous member, read off the digits of the previous member, counting the number of digits in groups of the same digit. For example:</p><ul><li><strong>1</strong> is read off as &ldquo;one 1&rdquo; or 11.</li><li><strong>11</strong> is read off as &ldquo;two 1s&rdquo; or 21.</li><li><strong>21</strong> is read off as &ldquo;one 2, then one 1&rdquo; or 1211.</li><li><strong>1211</strong> is read off as &ldquo;one 1, one 2, then two 1s&rdquo; or 111221.</li><li><strong>111221</strong> is read off as &ldquo;three 1s, two 2s, then one 1&rdquo; or 312211.</li></ul><h2 id=here-is-a-code-in-golang>Here is a code in Golang</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-golang data-lang=golang><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
 
-		
-		<link rel="stylesheet" href="https://learngolang.net/css/monosocialiconsfont.css">
-		
-
-		
-		<link href="https://learngolang.net/index.xml" rel="alternate" type="application/rss+xml" title="Go tutorials and examples." />
-		
-
-		
-	</head>
-
-    <body>
-       <nav class="main-nav">
-	
-	
-		<a href='https://learngolang.net/'> <span class="arrow">←</span>Home</a>
-	
-	<a href='https://learngolang.net/tutorials'>Archive</a>
-	<a href='https://learngolang.net/tags'>Tags</a>
-	<a href='https://learngolang.net/about'>About</a>
-
-	
-
-	
-	<a class="cta" href="https://learngolang.net/index.xml">Subscribe</a>
-	
-</nav>
-
-
-        <section id="wrapper" class="post">
-            <article>
-                <header>
-                    <h1>
-                        Print Look and Say Sequence in Go
-                    </h1>
-                    <h2 class="headline">
-                    May 5, 2019 23:17
-                    · 244 words
-                    · 2 minute read
-                      <span class="tags">
-                      
-                      </span>
-                    </h2>
-                </header>
-                
-                <section id="post-body">
-                    
-
-<h1 id="look-and-say-sequence">Look-and-say sequence</h1>
-
-<p>In mathematics, the look-and-say sequence is the sequence of integers beginning as follows:</p>
-
-<p><code>1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, ...</code></p>
-
-<p>To generate a member of the sequence from the previous member, read off the digits of the previous member, counting the number of digits in groups of the same digit. For example:</p>
-
-<ul>
-<li><strong>1</strong> is read off as &ldquo;one 1&rdquo; or 11.</li>
-<li><strong>11</strong> is read off as &ldquo;two 1s&rdquo; or 21.</li>
-<li><strong>21</strong> is read off as &ldquo;one 2, then one 1&rdquo; or 1211.</li>
-<li><strong>1211</strong> is read off as &ldquo;one 1, one 2, then two 1s&rdquo; or 111221.</li>
-<li><strong>111221</strong> is read off as &ldquo;three 1s, two 2s, then one 1&rdquo; or 312211.</li>
-</ul>
-
-<h2 id="here-is-a-code-in-golang">Here is a code in Golang</h2>
-
-<pre><code class="language-golang">package main
-
-import (
-	&quot;fmt&quot;
-	&quot;strconv&quot;
+<span style=color:#f92672>import</span> (
+	<span style=color:#e6db74>&#34;fmt&#34;</span>
+	<span style=color:#e6db74>&#34;strconv&#34;</span>
 )
 
-func main() {
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
 
-	lookAndSaysequence(10)
+	<span style=color:#a6e22e>lookAndSaysequence</span>(<span style=color:#ae81ff>10</span>)
 }
 
-func lookAndSaysequence(n int) {
-	prev := &quot;&quot;
-	for i := 0; i &lt; n; i++ {
-		if prev == &quot;&quot; {
-			prev = &quot;1&quot;
-			fmt.Println(prev)
-		} else {
-			counter := 0
-			seen := &quot;&quot;
-			tmp := &quot;&quot;
-			for _, c := range prev {
-				if string(c) == seen {
-					counter++
-				} else {
-					if counter &gt; 0 {
-						tmp += strconv.Itoa(counter) + seen
-						counter = 0
-						seen = &quot;&quot;
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>lookAndSaysequence</span>(<span style=color:#a6e22e>n</span> <span style=color:#66d9ef>int</span>) {
+	<span style=color:#a6e22e>prev</span> <span style=color:#f92672>:=</span> <span style=color:#e6db74>&#34;&#34;</span>
+	<span style=color:#66d9ef>for</span> <span style=color:#a6e22e>i</span> <span style=color:#f92672>:=</span> <span style=color:#ae81ff>0</span>; <span style=color:#a6e22e>i</span> &lt; <span style=color:#a6e22e>n</span>; <span style=color:#a6e22e>i</span><span style=color:#f92672>++</span> {
+		<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>prev</span> <span style=color:#f92672>==</span> <span style=color:#e6db74>&#34;&#34;</span> {
+			<span style=color:#a6e22e>prev</span> = <span style=color:#e6db74>&#34;1&#34;</span>
+			<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>prev</span>)
+		} <span style=color:#66d9ef>else</span> {
+			<span style=color:#a6e22e>counter</span> <span style=color:#f92672>:=</span> <span style=color:#ae81ff>0</span>
+			<span style=color:#a6e22e>seen</span> <span style=color:#f92672>:=</span> <span style=color:#e6db74>&#34;&#34;</span>
+			<span style=color:#a6e22e>tmp</span> <span style=color:#f92672>:=</span> <span style=color:#e6db74>&#34;&#34;</span>
+			<span style=color:#66d9ef>for</span> <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>c</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>range</span> <span style=color:#a6e22e>prev</span> {
+				<span style=color:#66d9ef>if</span> string(<span style=color:#a6e22e>c</span>) <span style=color:#f92672>==</span> <span style=color:#a6e22e>seen</span> {
+					<span style=color:#a6e22e>counter</span><span style=color:#f92672>++</span>
+				} <span style=color:#66d9ef>else</span> {
+					<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>counter</span> &gt; <span style=color:#ae81ff>0</span> {
+						<span style=color:#a6e22e>tmp</span> <span style=color:#f92672>+=</span> <span style=color:#a6e22e>strconv</span>.<span style=color:#a6e22e>Itoa</span>(<span style=color:#a6e22e>counter</span>) <span style=color:#f92672>+</span> <span style=color:#a6e22e>seen</span>
+						<span style=color:#a6e22e>counter</span> = <span style=color:#ae81ff>0</span>
+						<span style=color:#a6e22e>seen</span> = <span style=color:#e6db74>&#34;&#34;</span>
 					}
-					counter = 1
-					seen = string(c)
+					<span style=color:#a6e22e>counter</span> = <span style=color:#ae81ff>1</span>
+					<span style=color:#a6e22e>seen</span> = string(<span style=color:#a6e22e>c</span>)
 				}
 
 			}
 
-			if counter &gt; 0 {
-				tmp += strconv.Itoa(counter) + seen
+			<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>counter</span> &gt; <span style=color:#ae81ff>0</span> {
+				<span style=color:#a6e22e>tmp</span> <span style=color:#f92672>+=</span> <span style=color:#a6e22e>strconv</span>.<span style=color:#a6e22e>Itoa</span>(<span style=color:#a6e22e>counter</span>) <span style=color:#f92672>+</span> <span style=color:#a6e22e>seen</span>
 			}
 
-			prev = tmp
+			<span style=color:#a6e22e>prev</span> = <span style=color:#a6e22e>tmp</span>
 		}
-		fmt.Println(prev)
+		<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>prev</span>)
 	}
 }
-</code></pre>
-
-<p>Execute <code>go run main.go</code></p>
-
-<h3 id="result">Result</h3>
-
-<pre><code>1
+</code></pre></div><p>Execute <code>go run main.go</code></p><h3 id=result>Result</h3><pre><code>1
 1
 11
 21
@@ -142,65 +62,5 @@ func lookAndSaysequence(n int) {
 1113213211
 31131211131221
 13211311123113112211
-</code></pre>
-
-                </section>
-            </article>
-
-            
-
-            
-                <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'learngolang-net'; 
-
-     
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-
-            
-
-            
-
-            <footer id="footer">
-    
-    <p class="small">
-    
-       © Copyright 2019 <i class="fa fa-heart" aria-hidden="true"></i> gopher
-    
-    </p>
-    <p class="small">
-        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/varunpant/hugo-theme-bakasura">Bakasura</a>
-    </p>
-</footer>
-
-        </section>
-
-        <script src="https://learngolang.net/js/jquery-3.3.1.min.js"></script>
-<script src="https://learngolang.net/js/main.js"></script>
-<script src="https://learngolang.net/js/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-16978408-4');
-</script>
-
-
-
-
-    </body>
-</html>
+</code></pre></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2020 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','UA-16978408-4');</script></body></html>

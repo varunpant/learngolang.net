@@ -59,7 +59,6 @@ func twosum(nums []int, target int) []int {
 				a = append(a, i, j)
 				break
 			}
-
 		}
 	}
 
