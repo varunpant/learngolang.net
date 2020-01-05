@@ -1,0 +1,7 @@
+---
+title: "Goat Latin"
+date: 2019-08-12T10:40:26.791419+00:00
+draft: false
+---
+
+### Goat Latin

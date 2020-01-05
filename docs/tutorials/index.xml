@@ -1,45 +1,2570 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Go tutorials and examples.</title><link>https://learngolang.net/tutorials/</link><description>Recent content in Tutorials on Go tutorials and examples.</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2019 23:17:54 +0100</lastBuildDate><atom:link href="https://learngolang.net/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>Print Look and Say Sequence in Go</title><link>https://learngolang.net/tutorials/print-look-and-say-sequence-in-go/</link><pubDate>Sun, 05 May 2019 23:17:54 +0100</pubDate><guid>https://learngolang.net/tutorials/print-look-and-say-sequence-in-go/</guid><description>Look-and-say sequence In mathematics, the look-and-say sequence is the sequence of integers beginning as follows:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Go tutorials and examples.</title>
+    <link>https://learngolang.net/tutorials/</link>
+    <description>Recent content in Tutorials on Go tutorials and examples.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2019 11:35:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://learngolang.net/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sum of Root To Leaf Binary Numbers</title>
+      <link>https://learngolang.net/tutorials/solve-sum-of-root-to-leaf-binary-numbers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:35:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sum-of-root-to-leaf-binary-numbers-problem-in-golang/</guid>
+      <description> Sum of Root To Leaf Binary Numbers </description>
+    </item>
+    
+    <item>
+      <title>Remove Outermost Parentheses</title>
+      <link>https://learngolang.net/tutorials/solve-remove-outermost-parentheses-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:34:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-remove-outermost-parentheses-problem-in-golang/</guid>
+      <description> Remove Outermost Parentheses </description>
+    </item>
+    
+    <item>
+      <title>Binary Prefix Divisible By 5</title>
+      <link>https://learngolang.net/tutorials/solve-binary-prefix-divisible-by-5-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:33:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-prefix-divisible-by-5-problem-in-golang/</guid>
+      <description> Binary Prefix Divisible By 5 </description>
+    </item>
+    
+    <item>
+      <title>Partition Array Into Three Parts With Equal Sum</title>
+      <link>https://learngolang.net/tutorials/solve-partition-array-into-three-parts-with-equal-sum-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:32:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-partition-array-into-three-parts-with-equal-sum-problem-in-golang/</guid>
+      <description> Partition Array Into Three Parts With Equal Sum </description>
+    </item>
+    
+    <item>
+      <title>Pairs of Songs With Total Durations Divisible by 60</title>
+      <link>https://learngolang.net/tutorials/solve-pairs-of-songs-with-total-durations-divisible-by-60-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:31:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-pairs-of-songs-with-total-durations-divisible-by-60-problem-in-golang/</guid>
+      <description> Pairs of Songs With Total Durations Divisible by 60 </description>
+    </item>
+    
+    <item>
+      <title>Complement of Base 10 Integer</title>
+      <link>https://learngolang.net/tutorials/solve-complement-of-base-10-integer-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:30:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-complement-of-base-10-integer-problem-in-golang/</guid>
+      <description> Complement of Base 10 Integer </description>
+    </item>
+    
+    <item>
+      <title>Maximize Sum Of Array After K Negations</title>
+      <link>https://learngolang.net/tutorials/solve-maximize-sum-of-array-after-k-negations-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:29:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-maximize-sum-of-array-after-k-negations-problem-in-golang/</guid>
+      <description> Maximize Sum Of Array After K Negations </description>
+    </item>
+    
+    <item>
+      <title>Find Common Characters</title>
+      <link>https://learngolang.net/tutorials/solve-find-common-characters-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:28:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-common-characters-problem-in-golang/</guid>
+      <description> Find Common Characters </description>
+    </item>
+    
+    <item>
+      <title>Available Captures for Rook</title>
+      <link>https://learngolang.net/tutorials/solve-available-captures-for-rook-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:27:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-available-captures-for-rook-problem-in-golang/</guid>
+      <description> Available Captures for Rook </description>
+    </item>
+    
+    <item>
+      <title>Find the Town Judge</title>
+      <link>https://learngolang.net/tutorials/solve-find-the-town-judge-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:26:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-the-town-judge-problem-in-golang/</guid>
+      <description> Find the Town Judge </description>
+    </item>
+    
+    <item>
+      <title>Rotting Oranges</title>
+      <link>https://learngolang.net/tutorials/solve-rotting-oranges-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:25:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-rotting-oranges-problem-in-golang/</guid>
+      <description> Rotting Oranges </description>
+    </item>
+    
+    <item>
+      <title>Cousins in Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-cousins-in-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:24:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-cousins-in-binary-tree-problem-in-golang/</guid>
+      <description> Cousins in Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Add to Array-Form of Integer</title>
+      <link>https://learngolang.net/tutorials/solve-add-to-array-form-of-integer-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:23:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-add-to-array-form-of-integer-problem-in-golang/</guid>
+      <description> Add to Array-Form of Integer </description>
+    </item>
+    
+    <item>
+      <title>Sum of Even Numbers After Queries</title>
+      <link>https://learngolang.net/tutorials/solve-sum-of-even-numbers-after-queries-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:22:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sum-of-even-numbers-after-queries-problem-in-golang/</guid>
+      <description> Sum of Even Numbers After Queries </description>
+    </item>
+    
+    <item>
+      <title>Squares of a Sorted Array</title>
+      <link>https://learngolang.net/tutorials/solve-squares-of-a-sorted-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:21:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-squares-of-a-sorted-array-problem-in-golang/</guid>
+      <description> Squares of a Sorted Array </description>
+    </item>
+    
+    <item>
+      <title>Largest Perimeter Triangle</title>
+      <link>https://learngolang.net/tutorials/solve-largest-perimeter-triangle-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:20:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-largest-perimeter-triangle-problem-in-golang/</guid>
+      <description> Largest Perimeter Triangle </description>
+    </item>
+    
+    <item>
+      <title>Fibonacci Number</title>
+      <link>https://learngolang.net/tutorials/solve-fibonacci-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:19:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-fibonacci-number-problem-in-golang/</guid>
+      <description> Fibonacci Number </description>
+    </item>
+    
+    <item>
+      <title>Powerful Integers</title>
+      <link>https://learngolang.net/tutorials/solve-powerful-integers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:18:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-powerful-integers-problem-in-golang/</guid>
+      <description> Powerful Integers </description>
+    </item>
+    
+    <item>
+      <title>Univalued Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-univalued-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:17:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-univalued-binary-tree-problem-in-golang/</guid>
+      <description> Univalued Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>N-Repeated Element in Size 2N Array</title>
+      <link>https://learngolang.net/tutorials/solve-n-repeated-element-in-size-2n-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:16:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-n-repeated-element-in-size-2n-array-problem-in-golang/</guid>
+      <description> N-Repeated Element in Size 2N Array </description>
+    </item>
+    
+    <item>
+      <title>Verifying an Alien Dictionary</title>
+      <link>https://learngolang.net/tutorials/solve-verifying-an-alien-dictionary-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:15:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-verifying-an-alien-dictionary-problem-in-golang/</guid>
+      <description> Verifying an Alien Dictionary </description>
+    </item>
+    
+    <item>
+      <title>Largest Time for Given Digits</title>
+      <link>https://learngolang.net/tutorials/solve-largest-time-for-given-digits-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:14:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-largest-time-for-given-digits-problem-in-golang/</guid>
+      <description> Largest Time for Given Digits </description>
+    </item>
+    
+    <item>
+      <title>Delete Columns to Make Sorted</title>
+      <link>https://learngolang.net/tutorials/solve-delete-columns-to-make-sorted-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:13:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-delete-columns-to-make-sorted-problem-in-golang/</guid>
+      <description> Delete Columns to Make Sorted </description>
+    </item>
+    
+    <item>
+      <title>DI String Match</title>
+      <link>https://learngolang.net/tutorials/solve-di-string-match-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:12:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-di-string-match-problem-in-golang/</guid>
+      <description> DI String Match </description>
+    </item>
+    
+    <item>
+      <title>Valid Mountain Array</title>
+      <link>https://learngolang.net/tutorials/solve-valid-mountain-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:11:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-valid-mountain-array-problem-in-golang/</guid>
+      <description> Valid Mountain Array </description>
+    </item>
+    
+    <item>
+      <title>Reorder Log Files</title>
+      <link>https://learngolang.net/tutorials/solve-reorder-log-files-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:10:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reorder-log-files-problem-in-golang/</guid>
+      <description> Reorder Log Files </description>
+    </item>
+    
+    <item>
+      <title>Number of Recent Calls</title>
+      <link>https://learngolang.net/tutorials/solve-number-of-recent-calls-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:09:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-number-of-recent-calls-problem-in-golang/</guid>
+      <description> Number of Recent Calls </description>
+    </item>
+    
+    <item>
+      <title>Unique Email Addresses</title>
+      <link>https://learngolang.net/tutorials/solve-unique-email-addresses-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:08:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-unique-email-addresses-problem-in-golang/</guid>
+      <description> Unique Email Addresses </description>
+    </item>
+    
+    <item>
+      <title>Long Pressed Name</title>
+      <link>https://learngolang.net/tutorials/solve-long-pressed-name-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:07:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-long-pressed-name-problem-in-golang/</guid>
+      <description> Long Pressed Name </description>
+    </item>
+    
+    <item>
+      <title>Sort Array By Parity II</title>
+      <link>https://learngolang.net/tutorials/solve-sort-array-by-parity-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:06:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sort-array-by-parity-ii-problem-in-golang/</guid>
+      <description> Sort Array By Parity II </description>
+    </item>
+    
+    <item>
+      <title>Reverse Only Letters</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-only-letters-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:05:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-only-letters-problem-in-golang/</guid>
+      <description> Reverse Only Letters </description>
+    </item>
+    
+    <item>
+      <title>X of a Kind in a Deck of Cards</title>
+      <link>https://learngolang.net/tutorials/solve-x-of-a-kind-in-a-deck-of-cards-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:04:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-x-of-a-kind-in-a-deck-of-cards-problem-in-golang/</guid>
+      <description> X of a Kind in a Deck of Cards </description>
+    </item>
+    
+    <item>
+      <title>Smallest Range I</title>
+      <link>https://learngolang.net/tutorials/solve-smallest-range-i-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:03:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-smallest-range-i-problem-in-golang/</guid>
+      <description> Smallest Range I </description>
+    </item>
+    
+    <item>
+      <title>Sort Array By Parity</title>
+      <link>https://learngolang.net/tutorials/solve-sort-array-by-parity-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:02:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sort-array-by-parity-problem-in-golang/</guid>
+      <description> Sort Array By Parity </description>
+    </item>
+    
+    <item>
+      <title>Increasing Order Search Tree</title>
+      <link>https://learngolang.net/tutorials/solve-increasing-order-search-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:01:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-increasing-order-search-tree-problem-in-golang/</guid>
+      <description> Increasing Order Search Tree </description>
+    </item>
+    
+    <item>
+      <title>Monotonic Array</title>
+      <link>https://learngolang.net/tutorials/solve-monotonic-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 11:00:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-monotonic-array-problem-in-golang/</guid>
+      <description> Monotonic Array </description>
+    </item>
+    
+    <item>
+      <title>Groups of Special-Equivalent Strings</title>
+      <link>https://learngolang.net/tutorials/solve-groups-of-special-equivalent-strings-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:59:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-groups-of-special-equivalent-strings-problem-in-golang/</guid>
+      <description> Groups of Special-Equivalent Strings </description>
+    </item>
+    
+    <item>
+      <title>Surface Area of 3D Shapes</title>
+      <link>https://learngolang.net/tutorials/solve-surface-area-of-3d-shapes-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:58:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-surface-area-of-3d-shapes-problem-in-golang/</guid>
+      <description> Surface Area of 3D Shapes </description>
+    </item>
+    
+    <item>
+      <title>Fair Candy Swap</title>
+      <link>https://learngolang.net/tutorials/solve-fair-candy-swap-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:57:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-fair-candy-swap-problem-in-golang/</guid>
+      <description> Fair Candy Swap </description>
+    </item>
+    
+    <item>
+      <title>Uncommon Words from Two Sentences</title>
+      <link>https://learngolang.net/tutorials/solve-uncommon-words-from-two-sentences-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:56:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-uncommon-words-from-two-sentences-problem-in-golang/</guid>
+      <description> Uncommon Words from Two Sentences </description>
+    </item>
+    
+    <item>
+      <title>Projection Area of 3D Shapes</title>
+      <link>https://learngolang.net/tutorials/solve-projection-area-of-3d-shapes-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:55:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-projection-area-of-3d-shapes-problem-in-golang/</guid>
+      <description> Projection Area of 3D Shapes </description>
+    </item>
+    
+    <item>
+      <title>Middle of the Linked List</title>
+      <link>https://learngolang.net/tutorials/solve-middle-of-the-linked-list-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:54:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-middle-of-the-linked-list-problem-in-golang/</guid>
+      <description> Middle of the Linked List </description>
+    </item>
+    
+    <item>
+      <title>Walking Robot Simulation</title>
+      <link>https://learngolang.net/tutorials/solve-walking-robot-simulation-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:53:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-walking-robot-simulation-problem-in-golang/</guid>
+      <description> Walking Robot Simulation </description>
+    </item>
+    
+    <item>
+      <title>Leaf-Similar Trees</title>
+      <link>https://learngolang.net/tutorials/solve-leaf-similar-trees-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:52:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-leaf-similar-trees-problem-in-golang/</guid>
+      <description> Leaf-Similar Trees </description>
+    </item>
+    
+    <item>
+      <title>Binary Gap</title>
+      <link>https://learngolang.net/tutorials/solve-binary-gap-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:51:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-gap-problem-in-golang/</guid>
+      <description> Binary Gap </description>
+    </item>
+    
+    <item>
+      <title>Transpose Matrix</title>
+      <link>https://learngolang.net/tutorials/solve-transpose-matrix-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:50:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-transpose-matrix-problem-in-golang/</guid>
+      <description> Transpose Matrix </description>
+    </item>
+    
+    <item>
+      <title>Lemonade Change</title>
+      <link>https://learngolang.net/tutorials/solve-lemonade-change-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:49:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-lemonade-change-problem-in-golang/</guid>
+      <description> Lemonade Change </description>
+    </item>
+    
+    <item>
+      <title>Buddy Strings</title>
+      <link>https://learngolang.net/tutorials/solve-buddy-strings-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:48:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-buddy-strings-problem-in-golang/</guid>
+      <description> Buddy Strings </description>
+    </item>
+    
+    <item>
+      <title>Peak Index in a Mountain Array</title>
+      <link>https://learngolang.net/tutorials/solve-peak-index-in-a-mountain-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:47:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-peak-index-in-a-mountain-array-problem-in-golang/</guid>
+      <description> Peak Index in a Mountain Array </description>
+    </item>
+    
+    <item>
+      <title>Maximize Distance to Closest Person</title>
+      <link>https://learngolang.net/tutorials/solve-maximize-distance-to-closest-person-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:46:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-maximize-distance-to-closest-person-problem-in-golang/</guid>
+      <description> Maximize Distance to Closest Person </description>
+    </item>
+    
+    <item>
+      <title>Backspace String Compare</title>
+      <link>https://learngolang.net/tutorials/solve-backspace-string-compare-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:45:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-backspace-string-compare-problem-in-golang/</guid>
+      <description> Backspace String Compare </description>
+    </item>
+    
+    <item>
+      <title>Magic Squares In Grid</title>
+      <link>https://learngolang.net/tutorials/solve-magic-squares-in-grid-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:44:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-magic-squares-in-grid-problem-in-golang/</guid>
+      <description> Magic Squares In Grid </description>
+    </item>
+    
+    <item>
+      <title>Rectangle Overlap</title>
+      <link>https://learngolang.net/tutorials/solve-rectangle-overlap-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:43:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-rectangle-overlap-problem-in-golang/</guid>
+      <description> Rectangle Overlap </description>
+    </item>
+    
+    <item>
+      <title>Flipping an Image</title>
+      <link>https://learngolang.net/tutorials/solve-flipping-an-image-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:42:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-flipping-an-image-problem-in-golang/</guid>
+      <description> Flipping an Image </description>
+    </item>
+    
+    <item>
+      <title>Positions of Large Groups</title>
+      <link>https://learngolang.net/tutorials/solve-positions-of-large-groups-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:41:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-positions-of-large-groups-problem-in-golang/</guid>
+      <description> Positions of Large Groups </description>
+    </item>
+    
+    <item>
+      <title>Goat Latin</title>
+      <link>https://learngolang.net/tutorials/solve-goat-latin-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:40:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-goat-latin-problem-in-golang/</guid>
+      <description> Goat Latin </description>
+    </item>
+    
+    <item>
+      <title>Shortest Distance to a Character</title>
+      <link>https://learngolang.net/tutorials/solve-shortest-distance-to-a-character-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:39:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-shortest-distance-to-a-character-problem-in-golang/</guid>
+      <description> Shortest Distance to a Character </description>
+    </item>
+    
+    <item>
+      <title>Design Linked List</title>
+      <link>https://learngolang.net/tutorials/solve-design-linked-list-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:38:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-design-linked-list-problem-in-golang/</guid>
+      <description> Design Linked List </description>
+    </item>
+    
+    <item>
+      <title>Most Common Word</title>
+      <link>https://learngolang.net/tutorials/solve-most-common-word-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:37:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-most-common-word-problem-in-golang/</guid>
+      <description> Most Common Word </description>
+    </item>
+    
+    <item>
+      <title>Largest Triangle Area</title>
+      <link>https://learngolang.net/tutorials/solve-largest-triangle-area-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:36:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-largest-triangle-area-problem-in-golang/</guid>
+      <description> Largest Triangle Area </description>
+    </item>
+    
+    <item>
+      <title>Subdomain Visit Count</title>
+      <link>https://learngolang.net/tutorials/solve-subdomain-visit-count-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:35:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-subdomain-visit-count-problem-in-golang/</guid>
+      <description> Subdomain Visit Count </description>
+    </item>
+    
+    <item>
+      <title>Number of Lines To Write String</title>
+      <link>https://learngolang.net/tutorials/solve-number-of-lines-to-write-string-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:34:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-number-of-lines-to-write-string-problem-in-golang/</guid>
+      <description> Number of Lines To Write String </description>
+    </item>
+    
+    <item>
+      <title>Unique Morse Code Words</title>
+      <link>https://learngolang.net/tutorials/solve-unique-morse-code-words-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:33:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-unique-morse-code-words-problem-in-golang/</guid>
+      <description> Unique Morse Code Words </description>
+    </item>
+    
+    <item>
+      <title>Design HashMap</title>
+      <link>https://learngolang.net/tutorials/solve-design-hashmap-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:32:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-design-hashmap-problem-in-golang/</guid>
+      <description> Design HashMap </description>
+    </item>
+    
+    <item>
+      <title>Design HashSet</title>
+      <link>https://learngolang.net/tutorials/solve-design-hashset-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:31:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-design-hashset-problem-in-golang/</guid>
+      <description> Design HashSet </description>
+    </item>
+    
+    <item>
+      <title>Rotate String</title>
+      <link>https://learngolang.net/tutorials/solve-rotate-string-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:30:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-rotate-string-problem-in-golang/</guid>
+      <description> Rotate String </description>
+    </item>
+    
+    <item>
+      <title>Rotated Digits</title>
+      <link>https://learngolang.net/tutorials/solve-rotated-digits-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:29:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-rotated-digits-problem-in-golang/</guid>
+      <description> Rotated Digits </description>
+    </item>
+    
+    <item>
+      <title>Letter Case Permutation</title>
+      <link>https://learngolang.net/tutorials/solve-letter-case-permutation-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:28:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-letter-case-permutation-problem-in-golang/</guid>
+      <description> Letter Case Permutation </description>
+    </item>
+    
+    <item>
+      <title>Minimum Distance Between BST Nodes</title>
+      <link>https://learngolang.net/tutorials/solve-minimum-distance-between-bst-nodes-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:27:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-minimum-distance-between-bst-nodes-problem-in-golang/</guid>
+      <description> Minimum Distance Between BST Nodes </description>
+    </item>
+    
+    <item>
+      <title>Binary Search</title>
+      <link>https://learngolang.net/tutorials/solve-binary-search-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:26:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-search-problem-in-golang/</guid>
+      <description> Binary Search </description>
+    </item>
+    
+    <item>
+      <title>Kth Largest Element in a Stream</title>
+      <link>https://learngolang.net/tutorials/solve-kth-largest-element-in-a-stream-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:25:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-kth-largest-element-in-a-stream-problem-in-golang/</guid>
+      <description> Kth Largest Element in a Stream </description>
+    </item>
+    
+    <item>
+      <title>Search in a Binary Search Tree</title>
+      <link>https://learngolang.net/tutorials/solve-search-in-a-binary-search-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:24:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-search-in-a-binary-search-tree-problem-in-golang/</guid>
+      <description> Search in a Binary Search Tree </description>
+    </item>
+    
+    <item>
+      <title>Jewels and Stones</title>
+      <link>https://learngolang.net/tutorials/solve-jewels-and-stones-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:23:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-jewels-and-stones-problem-in-golang/</guid>
+      <description> Jewels and Stones </description>
+    </item>
+    
+    <item>
+      <title>Toeplitz Matrix</title>
+      <link>https://learngolang.net/tutorials/solve-toeplitz-matrix-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:22:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-toeplitz-matrix-problem-in-golang/</guid>
+      <description> Toeplitz Matrix </description>
+    </item>
+    
+    <item>
+      <title>N-ary Tree Postorder Traversal</title>
+      <link>https://learngolang.net/tutorials/solve-n-ary-tree-postorder-traversal-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:21:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-n-ary-tree-postorder-traversal-problem-in-golang/</guid>
+      <description> N-ary Tree Postorder Traversal </description>
+    </item>
+    
+    <item>
+      <title>N-ary Tree Preorder Traversal</title>
+      <link>https://learngolang.net/tutorials/solve-n-ary-tree-preorder-traversal-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:20:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-n-ary-tree-preorder-traversal-problem-in-golang/</guid>
+      <description> N-ary Tree Preorder Traversal </description>
+    </item>
+    
+    <item>
+      <title>Maximum Depth of N-ary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-maximum-depth-of-n-ary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:19:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-maximum-depth-of-n-ary-tree-problem-in-golang/</guid>
+      <description> Maximum Depth of N-ary Tree </description>
+    </item>
+    
+    <item>
+      <title>Quad Tree Intersection</title>
+      <link>https://learngolang.net/tutorials/solve-quad-tree-intersection-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:18:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-quad-tree-intersection-problem-in-golang/</guid>
+      <description> Quad Tree Intersection </description>
+    </item>
+    
+    <item>
+      <title>Construct Quad Tree</title>
+      <link>https://learngolang.net/tutorials/solve-construct-quad-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:17:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-construct-quad-tree-problem-in-golang/</guid>
+      <description> Construct Quad Tree </description>
+    </item>
+    
+    <item>
+      <title>Prime Number of Set Bits in Binary Representation</title>
+      <link>https://learngolang.net/tutorials/solve-prime-number-of-set-bits-in-binary-representation-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:16:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-prime-number-of-set-bits-in-binary-representation-problem-in-golang/</guid>
+      <description> Prime Number of Set Bits in Binary Representation </description>
+    </item>
+    
+    <item>
+      <title>N-ary Tree Level Order Traversal</title>
+      <link>https://learngolang.net/tutorials/solve-n-ary-tree-level-order-traversal-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:15:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-n-ary-tree-level-order-traversal-problem-in-golang/</guid>
+      <description> N-ary Tree Level Order Traversal </description>
+    </item>
+    
+    <item>
+      <title>Reach a Number</title>
+      <link>https://learngolang.net/tutorials/solve-reach-a-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:14:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reach-a-number-problem-in-golang/</guid>
+      <description> Reach a Number </description>
+    </item>
+    
+    <item>
+      <title>Shortest Completing Word</title>
+      <link>https://learngolang.net/tutorials/solve-shortest-completing-word-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:13:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-shortest-completing-word-problem-in-golang/</guid>
+      <description> Shortest Completing Word </description>
+    </item>
+    
+    <item>
+      <title>Largest Number At Least Twice of Others</title>
+      <link>https://learngolang.net/tutorials/solve-largest-number-at-least-twice-of-others-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:12:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-largest-number-at-least-twice-of-others-problem-in-golang/</guid>
+      <description> Largest Number At Least Twice of Others </description>
+    </item>
+    
+    <item>
+      <title>Min Cost Climbing Stairs</title>
+      <link>https://learngolang.net/tutorials/solve-min-cost-climbing-stairs-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:11:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-min-cost-climbing-stairs-problem-in-golang/</guid>
+      <description> Min Cost Climbing Stairs </description>
+    </item>
+    
+    <item>
+      <title>Find Smallest Letter Greater Than Target</title>
+      <link>https://learngolang.net/tutorials/solve-find-smallest-letter-greater-than-target-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:10:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-smallest-letter-greater-than-target-problem-in-golang/</guid>
+      <description> Find Smallest Letter Greater Than Target </description>
+    </item>
+    
+    <item>
+      <title>To Lower Case</title>
+      <link>https://learngolang.net/tutorials/solve-to-lower-case-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:09:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-to-lower-case-problem-in-golang/</guid>
+      <description> To Lower Case </description>
+    </item>
+    
+    <item>
+      <title>Flood Fill</title>
+      <link>https://learngolang.net/tutorials/solve-flood-fill-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:08:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-flood-fill-problem-in-golang/</guid>
+      <description> Flood Fill </description>
+    </item>
+    
+    <item>
+      <title>Self Dividing Numbers</title>
+      <link>https://learngolang.net/tutorials/solve-self-dividing-numbers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:07:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-self-dividing-numbers-problem-in-golang/</guid>
+      <description> Self Dividing Numbers </description>
+    </item>
+    
+    <item>
+      <title>Find Pivot Index</title>
+      <link>https://learngolang.net/tutorials/solve-find-pivot-index-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:06:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-pivot-index-problem-in-golang/</guid>
+      <description> Find Pivot Index </description>
+    </item>
+    
+    <item>
+      <title>Longest Word in Dictionary</title>
+      <link>https://learngolang.net/tutorials/solve-longest-word-in-dictionary-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:05:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-longest-word-in-dictionary-problem-in-golang/</guid>
+      <description> Longest Word in Dictionary </description>
+    </item>
+    
+    <item>
+      <title>1-bit and 2-bit Characters</title>
+      <link>https://learngolang.net/tutorials/solve-1-bit-and-2-bit-characters-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:04:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-1-bit-and-2-bit-characters-problem-in-golang/</guid>
+      <description> 1-bit and 2-bit Characters </description>
+    </item>
+    
+    <item>
+      <title>Degree of an Array</title>
+      <link>https://learngolang.net/tutorials/solve-degree-of-an-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:03:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-degree-of-an-array-problem-in-golang/</guid>
+      <description> Degree of an Array </description>
+    </item>
+    
+    <item>
+      <title>Count Binary Substrings</title>
+      <link>https://learngolang.net/tutorials/solve-count-binary-substrings-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:02:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-count-binary-substrings-problem-in-golang/</guid>
+      <description> Count Binary Substrings </description>
+    </item>
+    
+    <item>
+      <title>Binary Number with Alternating Bits</title>
+      <link>https://learngolang.net/tutorials/solve-binary-number-with-alternating-bits-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:01:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-number-with-alternating-bits-problem-in-golang/</guid>
+      <description> Binary Number with Alternating Bits </description>
+    </item>
+    
+    <item>
+      <title>Employee Importance</title>
+      <link>https://learngolang.net/tutorials/solve-employee-importance-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 10:00:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-employee-importance-problem-in-golang/</guid>
+      <description> Employee Importance </description>
+    </item>
+    
+    <item>
+      <title>Longest Univalue Path</title>
+      <link>https://learngolang.net/tutorials/solve-longest-univalue-path-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:59:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-longest-univalue-path-problem-in-golang/</guid>
+      <description> Longest Univalue Path </description>
+    </item>
+    
+    <item>
+      <title>Repeated String Match</title>
+      <link>https://learngolang.net/tutorials/solve-repeated-string-match-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:58:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-repeated-string-match-problem-in-golang/</guid>
+      <description> Repeated String Match </description>
+    </item>
+    
+    <item>
+      <title>Baseball Game</title>
+      <link>https://learngolang.net/tutorials/solve-baseball-game-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:57:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-baseball-game-problem-in-golang/</guid>
+      <description> Baseball Game </description>
+    </item>
+    
+    <item>
+      <title>Valid Palindrome II</title>
+      <link>https://learngolang.net/tutorials/solve-valid-palindrome-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:56:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-valid-palindrome-ii-problem-in-golang/</guid>
+      <description> Valid Palindrome II </description>
+    </item>
+    
+    <item>
+      <title>Longest Continuous Increasing Subsequence</title>
+      <link>https://learngolang.net/tutorials/solve-longest-continuous-increasing-subsequence-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:55:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-longest-continuous-increasing-subsequence-problem-in-golang/</guid>
+      <description> Longest Continuous Increasing Subsequence </description>
+    </item>
+    
+    <item>
+      <title>Second Minimum Node In a Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-second-minimum-node-in-a-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:54:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-second-minimum-node-in-a-binary-tree-problem-in-golang/</guid>
+      <description> Second Minimum Node In a Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Trim a Binary Search Tree</title>
+      <link>https://learngolang.net/tutorials/solve-trim-a-binary-search-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:53:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-trim-a-binary-search-tree-problem-in-golang/</guid>
+      <description> Trim a Binary Search Tree </description>
+    </item>
+    
+    <item>
+      <title>Non-decreasing Array</title>
+      <link>https://learngolang.net/tutorials/solve-non-decreasing-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:52:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-non-decreasing-array-problem-in-golang/</guid>
+      <description> Non-decreasing Array </description>
+    </item>
+    
+    <item>
+      <title>Image Smoother</title>
+      <link>https://learngolang.net/tutorials/solve-image-smoother-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:51:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-image-smoother-problem-in-golang/</guid>
+      <description> Image Smoother </description>
+    </item>
+    
+    <item>
+      <title>Robot Return to Origin</title>
+      <link>https://learngolang.net/tutorials/solve-robot-return-to-origin-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:50:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-robot-return-to-origin-problem-in-golang/</guid>
+      <description> Robot Return to Origin </description>
+    </item>
+    
+    <item>
+      <title>Two Sum IV - Input is a BST</title>
+      <link>https://learngolang.net/tutorials/solve-two-sum-iv-input-is-a-bst-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:49:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-two-sum-iv-input-is-a-bst-problem-in-golang/</guid>
+      <description> Two Sum IV - Input is a BST </description>
+    </item>
+    
+    <item>
+      <title>Set Mismatch</title>
+      <link>https://learngolang.net/tutorials/solve-set-mismatch-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:48:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-set-mismatch-problem-in-golang/</guid>
+      <description> Set Mismatch </description>
+    </item>
+    
+    <item>
+      <title>Maximum Average Subarray I</title>
+      <link>https://learngolang.net/tutorials/solve-maximum-average-subarray-i-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:47:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-maximum-average-subarray-i-problem-in-golang/</guid>
+      <description> Maximum Average Subarray I </description>
+    </item>
+    
+    <item>
+      <title>Average of Levels in Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-average-of-levels-in-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:46:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-average-of-levels-in-binary-tree-problem-in-golang/</guid>
+      <description> Average of Levels in Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Sum of Square Numbers</title>
+      <link>https://learngolang.net/tutorials/solve-sum-of-square-numbers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:45:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sum-of-square-numbers-problem-in-golang/</guid>
+      <description> Sum of Square Numbers </description>
+    </item>
+    
+    <item>
+      <title>Maximum Product of Three Numbers</title>
+      <link>https://learngolang.net/tutorials/solve-maximum-product-of-three-numbers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:44:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-maximum-product-of-three-numbers-problem-in-golang/</guid>
+      <description> Maximum Product of Three Numbers </description>
+    </item>
+    
+    <item>
+      <title>Swap Salary</title>
+      <link>https://learngolang.net/tutorials/solve-swap-salary-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:43:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-swap-salary-problem-in-golang/</guid>
+      <description> Swap Salary </description>
+    </item>
+    
+    <item>
+      <title>Not Boring Movies</title>
+      <link>https://learngolang.net/tutorials/solve-not-boring-movies-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:42:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-not-boring-movies-problem-in-golang/</guid>
+      <description> Not Boring Movies </description>
+    </item>
+    
+    <item>
+      <title>Merge Two Binary Trees</title>
+      <link>https://learngolang.net/tutorials/solve-merge-two-binary-trees-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:41:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-merge-two-binary-trees-problem-in-golang/</guid>
+      <description> Merge Two Binary Trees </description>
+    </item>
+    
+    <item>
+      <title>Construct String from Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-construct-string-from-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:40:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-construct-string-from-binary-tree-problem-in-golang/</guid>
+      <description> Construct String from Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Can Place Flowers</title>
+      <link>https://learngolang.net/tutorials/solve-can-place-flowers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:39:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-can-place-flowers-problem-in-golang/</guid>
+      <description> Can Place Flowers </description>
+    </item>
+    
+    <item>
+      <title>Minimum Index Sum of Two Lists</title>
+      <link>https://learngolang.net/tutorials/solve-minimum-index-sum-of-two-lists-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:38:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-minimum-index-sum-of-two-lists-problem-in-golang/</guid>
+      <description> Minimum Index Sum of Two Lists </description>
+    </item>
+    
+    <item>
+      <title>Range Addition II</title>
+      <link>https://learngolang.net/tutorials/solve-range-addition-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:37:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-range-addition-ii-problem-in-golang/</guid>
+      <description> Range Addition II </description>
+    </item>
+    
+    <item>
+      <title>Classes More Than 5 Students</title>
+      <link>https://learngolang.net/tutorials/solve-classes-more-than-5-students-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:36:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-classes-more-than-5-students-problem-in-golang/</guid>
+      <description> Classes More Than 5 Students </description>
+    </item>
+    
+    <item>
+      <title>Big Countries</title>
+      <link>https://learngolang.net/tutorials/solve-big-countries-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:35:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-big-countries-problem-in-golang/</guid>
+      <description> Big Countries </description>
+    </item>
+    
+    <item>
+      <title>Longest Harmonious Subsequence</title>
+      <link>https://learngolang.net/tutorials/solve-longest-harmonious-subsequence-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:34:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-longest-harmonious-subsequence-problem-in-golang/</guid>
+      <description> Longest Harmonious Subsequence </description>
+    </item>
+    
+    <item>
+      <title>Shortest Unsorted Continuous Subarray</title>
+      <link>https://learngolang.net/tutorials/solve-shortest-unsorted-continuous-subarray-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:33:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-shortest-unsorted-continuous-subarray-problem-in-golang/</guid>
+      <description> Shortest Unsorted Continuous Subarray </description>
+    </item>
+    
+    <item>
+      <title>Distribute Candies</title>
+      <link>https://learngolang.net/tutorials/solve-distribute-candies-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:32:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-distribute-candies-problem-in-golang/</guid>
+      <description> Distribute Candies </description>
+    </item>
+    
+    <item>
+      <title>Subtree of Another Tree</title>
+      <link>https://learngolang.net/tutorials/solve-subtree-of-another-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:31:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-subtree-of-another-tree-problem-in-golang/</guid>
+      <description> Subtree of Another Tree </description>
+    </item>
+    
+    <item>
+      <title>Reshape the Matrix</title>
+      <link>https://learngolang.net/tutorials/solve-reshape-the-matrix-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:30:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reshape-the-matrix-problem-in-golang/</guid>
+      <description> Reshape the Matrix </description>
+    </item>
+    
+    <item>
+      <title>Binary Tree Tilt</title>
+      <link>https://learngolang.net/tutorials/solve-binary-tree-tilt-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:29:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-tree-tilt-problem-in-golang/</guid>
+      <description> Binary Tree Tilt </description>
+    </item>
+    
+    <item>
+      <title>Array Partition I</title>
+      <link>https://learngolang.net/tutorials/solve-array-partition-i-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:28:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-array-partition-i-problem-in-golang/</guid>
+      <description> Array Partition I </description>
+    </item>
+    
+    <item>
+      <title>Reverse Words in a String III</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-words-in-a-string-iii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:27:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-words-in-a-string-iii-problem-in-golang/</guid>
+      <description> Reverse Words in a String III </description>
+    </item>
+    
+    <item>
+      <title>Student Attendance Record I</title>
+      <link>https://learngolang.net/tutorials/solve-student-attendance-record-i-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:26:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-student-attendance-record-i-problem-in-golang/</guid>
+      <description> Student Attendance Record I </description>
+    </item>
+    
+    <item>
+      <title>Diameter of Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-diameter-of-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:25:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-diameter-of-binary-tree-problem-in-golang/</guid>
+      <description> Diameter of Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Reverse String II</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-string-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:24:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-string-ii-problem-in-golang/</guid>
+      <description> Reverse String II </description>
+    </item>
+    
+    <item>
+      <title>Convert BST to Greater Tree</title>
+      <link>https://learngolang.net/tutorials/solve-convert-bst-to-greater-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:23:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-convert-bst-to-greater-tree-problem-in-golang/</guid>
+      <description> Convert BST to Greater Tree </description>
+    </item>
+    
+    <item>
+      <title>K-diff Pairs in an Array</title>
+      <link>https://learngolang.net/tutorials/solve-k-diff-pairs-in-an-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:22:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-k-diff-pairs-in-an-array-problem-in-golang/</guid>
+      <description> K-diff Pairs in an Array </description>
+    </item>
+    
+    <item>
+      <title>Minimum Absolute Difference in BST</title>
+      <link>https://learngolang.net/tutorials/solve-minimum-absolute-difference-in-bst-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:21:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-minimum-absolute-difference-in-bst-problem-in-golang/</guid>
+      <description> Minimum Absolute Difference in BST </description>
+    </item>
+    
+    <item>
+      <title>Longest Uncommon Subsequence I </title>
+      <link>https://learngolang.net/tutorials/solve-longest-uncommon-subsequence-i-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:20:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-longest-uncommon-subsequence-i-problem-in-golang/</guid>
+      <description> Longest Uncommon Subsequence I </description>
+    </item>
+    
+    <item>
+      <title>Detect Capital</title>
+      <link>https://learngolang.net/tutorials/solve-detect-capital-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:19:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-detect-capital-problem-in-golang/</guid>
+      <description> Detect Capital </description>
+    </item>
+    
+    <item>
+      <title>Perfect Number</title>
+      <link>https://learngolang.net/tutorials/solve-perfect-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:18:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-perfect-number-problem-in-golang/</guid>
+      <description> Perfect Number </description>
+    </item>
+    
+    <item>
+      <title>Relative Ranks</title>
+      <link>https://learngolang.net/tutorials/solve-relative-ranks-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:17:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-relative-ranks-problem-in-golang/</guid>
+      <description> Relative Ranks </description>
+    </item>
+    
+    <item>
+      <title>Base 7</title>
+      <link>https://learngolang.net/tutorials/solve-base-7-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:16:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-base-7-problem-in-golang/</guid>
+      <description> Base 7 </description>
+    </item>
+    
+    <item>
+      <title>Find Mode in Binary Search Tree</title>
+      <link>https://learngolang.net/tutorials/solve-find-mode-in-binary-search-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:15:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-mode-in-binary-search-tree-problem-in-golang/</guid>
+      <description> Find Mode in Binary Search Tree </description>
+    </item>
+    
+    <item>
+      <title>Keyboard Row</title>
+      <link>https://learngolang.net/tutorials/solve-keyboard-row-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:14:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-keyboard-row-problem-in-golang/</guid>
+      <description> Keyboard Row </description>
+    </item>
+    
+    <item>
+      <title>Next Greater Element I</title>
+      <link>https://learngolang.net/tutorials/solve-next-greater-element-i-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:13:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-next-greater-element-i-problem-in-golang/</guid>
+      <description> Next Greater Element I </description>
+    </item>
+    
+    <item>
+      <title>Construct the Rectangle</title>
+      <link>https://learngolang.net/tutorials/solve-construct-the-rectangle-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:12:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-construct-the-rectangle-problem-in-golang/</guid>
+      <description> Construct the Rectangle </description>
+    </item>
+    
+    <item>
+      <title>Max Consecutive Ones</title>
+      <link>https://learngolang.net/tutorials/solve-max-consecutive-ones-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:11:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-max-consecutive-ones-problem-in-golang/</guid>
+      <description> Max Consecutive Ones </description>
+    </item>
+    
+    <item>
+      <title>License Key Formatting</title>
+      <link>https://learngolang.net/tutorials/solve-license-key-formatting-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:10:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-license-key-formatting-problem-in-golang/</guid>
+      <description> License Key Formatting </description>
+    </item>
+    
+    <item>
+      <title>Number Complement</title>
+      <link>https://learngolang.net/tutorials/solve-number-complement-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:09:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-number-complement-problem-in-golang/</guid>
+      <description> Number Complement </description>
+    </item>
+    
+    <item>
+      <title>Heaters</title>
+      <link>https://learngolang.net/tutorials/solve-heaters-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:08:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-heaters-problem-in-golang/</guid>
+      <description> Heaters </description>
+    </item>
+    
+    <item>
+      <title>Island Perimeter</title>
+      <link>https://learngolang.net/tutorials/solve-island-perimeter-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:07:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-island-perimeter-problem-in-golang/</guid>
+      <description> Island Perimeter </description>
+    </item>
+    
+    <item>
+      <title>Hamming Distance</title>
+      <link>https://learngolang.net/tutorials/solve-hamming-distance-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:06:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-hamming-distance-problem-in-golang/</guid>
+      <description> Hamming Distance </description>
+    </item>
+    
+    <item>
+      <title>Repeated Substring Pattern</title>
+      <link>https://learngolang.net/tutorials/solve-repeated-substring-pattern-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:05:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-repeated-substring-pattern-problem-in-golang/</guid>
+      <description> Repeated Substring Pattern </description>
+    </item>
+    
+    <item>
+      <title>Assign Cookies</title>
+      <link>https://learngolang.net/tutorials/solve-assign-cookies-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:04:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-assign-cookies-problem-in-golang/</guid>
+      <description> Assign Cookies </description>
+    </item>
+    
+    <item>
+      <title>Minimum Moves to Equal Array Elements</title>
+      <link>https://learngolang.net/tutorials/solve-minimum-moves-to-equal-array-elements-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:03:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-minimum-moves-to-equal-array-elements-problem-in-golang/</guid>
+      <description> Minimum Moves to Equal Array Elements </description>
+    </item>
+    
+    <item>
+      <title>Find All Numbers Disappeared in an Array</title>
+      <link>https://learngolang.net/tutorials/solve-find-all-numbers-disappeared-in-an-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:02:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-all-numbers-disappeared-in-an-array-problem-in-golang/</guid>
+      <description> Find All Numbers Disappeared in an Array </description>
+    </item>
+    
+    <item>
+      <title>Number of Boomerangs</title>
+      <link>https://learngolang.net/tutorials/solve-number-of-boomerangs-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:01:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-number-of-boomerangs-problem-in-golang/</guid>
+      <description> Number of Boomerangs </description>
+    </item>
+    
+    <item>
+      <title>String Compression</title>
+      <link>https://learngolang.net/tutorials/solve-string-compression-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 09:00:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-string-compression-problem-in-golang/</guid>
+      <description> String Compression </description>
+    </item>
+    
+    <item>
+      <title>Arranging Coins</title>
+      <link>https://learngolang.net/tutorials/solve-arranging-coins-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:59:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-arranging-coins-problem-in-golang/</guid>
+      <description> Arranging Coins </description>
+    </item>
+    
+    <item>
+      <title>Find All Anagrams in a String</title>
+      <link>https://learngolang.net/tutorials/solve-find-all-anagrams-in-a-string-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:58:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-all-anagrams-in-a-string-problem-in-golang/</guid>
+      <description> Find All Anagrams in a String </description>
+    </item>
+    
+    <item>
+      <title>Path Sum III</title>
+      <link>https://learngolang.net/tutorials/solve-path-sum-iii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:57:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-path-sum-iii-problem-in-golang/</guid>
+      <description> Path Sum III </description>
+    </item>
+    
+    <item>
+      <title>Number of Segments in a String</title>
+      <link>https://learngolang.net/tutorials/solve-number-of-segments-in-a-string-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:56:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-number-of-segments-in-a-string-problem-in-golang/</guid>
+      <description> Number of Segments in a String </description>
+    </item>
+    
+    <item>
+      <title>Add Strings</title>
+      <link>https://learngolang.net/tutorials/solve-add-strings-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:55:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-add-strings-problem-in-golang/</guid>
+      <description> Add Strings </description>
+    </item>
+    
+    <item>
+      <title>Third Maximum Number</title>
+      <link>https://learngolang.net/tutorials/solve-third-maximum-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:54:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-third-maximum-number-problem-in-golang/</guid>
+      <description> Third Maximum Number </description>
+    </item>
+    
+    <item>
+      <title>Fizz Buzz</title>
+      <link>https://learngolang.net/tutorials/solve-fizz-buzz-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:53:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-fizz-buzz-problem-in-golang/</guid>
+      <description> Fizz Buzz </description>
+    </item>
+    
+    <item>
+      <title>Longest Palindrome</title>
+      <link>https://learngolang.net/tutorials/solve-longest-palindrome-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:52:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-longest-palindrome-problem-in-golang/</guid>
+      <description> Longest Palindrome </description>
+    </item>
+    
+    <item>
+      <title>Convert a Number to Hexadecimal</title>
+      <link>https://learngolang.net/tutorials/solve-convert-a-number-to-hexadecimal-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:51:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-convert-a-number-to-hexadecimal-problem-in-golang/</guid>
+      <description> Convert a Number to Hexadecimal </description>
+    </item>
+    
+    <item>
+      <title>Sum of Left Leaves</title>
+      <link>https://learngolang.net/tutorials/solve-sum-of-left-leaves-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:50:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sum-of-left-leaves-problem-in-golang/</guid>
+      <description> Sum of Left Leaves </description>
+    </item>
+    
+    <item>
+      <title>Binary Watch</title>
+      <link>https://learngolang.net/tutorials/solve-binary-watch-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:49:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-watch-problem-in-golang/</guid>
+      <description> Binary Watch </description>
+    </item>
+    
+    <item>
+      <title>Nth Digit</title>
+      <link>https://learngolang.net/tutorials/solve-nth-digit-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:48:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-nth-digit-problem-in-golang/</guid>
+      <description> Nth Digit </description>
+    </item>
+    
+    <item>
+      <title>Find the Difference</title>
+      <link>https://learngolang.net/tutorials/solve-find-the-difference-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:47:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-find-the-difference-problem-in-golang/</guid>
+      <description> Find the Difference </description>
+    </item>
+    
+    <item>
+      <title>First Unique Character in a String</title>
+      <link>https://learngolang.net/tutorials/solve-first-unique-character-in-a-string-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:46:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-first-unique-character-in-a-string-problem-in-golang/</guid>
+      <description> First Unique Character in a String </description>
+    </item>
+    
+    <item>
+      <title>Ransom Note</title>
+      <link>https://learngolang.net/tutorials/solve-ransom-note-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:45:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-ransom-note-problem-in-golang/</guid>
+      <description> Ransom Note </description>
+    </item>
+    
+    <item>
+      <title>Guess Number Higher or Lower</title>
+      <link>https://learngolang.net/tutorials/solve-guess-number-higher-or-lower-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:44:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-guess-number-higher-or-lower-problem-in-golang/</guid>
+      <description> Guess Number Higher or Lower </description>
+    </item>
+    
+    <item>
+      <title>Sum of Two Integers</title>
+      <link>https://learngolang.net/tutorials/solve-sum-of-two-integers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:43:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sum-of-two-integers-problem-in-golang/</guid>
+      <description> Sum of Two Integers </description>
+    </item>
+    
+    <item>
+      <title>Valid Perfect Square</title>
+      <link>https://learngolang.net/tutorials/solve-valid-perfect-square-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:42:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-valid-perfect-square-problem-in-golang/</guid>
+      <description> Valid Perfect Square </description>
+    </item>
+    
+    <item>
+      <title>Intersection of Two Arrays II</title>
+      <link>https://learngolang.net/tutorials/solve-intersection-of-two-arrays-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:41:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-intersection-of-two-arrays-ii-problem-in-golang/</guid>
+      <description> Intersection of Two Arrays II </description>
+    </item>
+    
+    <item>
+      <title>Intersection of Two Arrays</title>
+      <link>https://learngolang.net/tutorials/solve-intersection-of-two-arrays-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:40:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-intersection-of-two-arrays-problem-in-golang/</guid>
+      <description> Intersection of Two Arrays </description>
+    </item>
+    
+    <item>
+      <title>Reverse Vowels of a String</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-vowels-of-a-string-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:39:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-vowels-of-a-string-problem-in-golang/</guid>
+      <description> Reverse Vowels of a String </description>
+    </item>
+    
+    <item>
+      <title>Reverse String</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-string-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:38:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-string-problem-in-golang/</guid>
+      <description> Reverse String </description>
+    </item>
+    
+    <item>
+      <title>Power of Four</title>
+      <link>https://learngolang.net/tutorials/solve-power-of-four-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:37:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-power-of-four-problem-in-golang/</guid>
+      <description> Power of Four </description>
+    </item>
+    
+    <item>
+      <title>Power of Three</title>
+      <link>https://learngolang.net/tutorials/solve-power-of-three-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:36:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-power-of-three-problem-in-golang/</guid>
+      <description> Power of Three </description>
+    </item>
+    
+    <item>
+      <title>Range Sum Query - Immutable</title>
+      <link>https://learngolang.net/tutorials/solve-range-sum-query-immutable-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:35:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-range-sum-query-immutable-problem-in-golang/</guid>
+      <description> Range Sum Query - Immutable </description>
+    </item>
+    
+    <item>
+      <title>Nim Game</title>
+      <link>https://learngolang.net/tutorials/solve-nim-game-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:34:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-nim-game-problem-in-golang/</guid>
+      <description> Nim Game </description>
+    </item>
+    
+    <item>
+      <title>Word Pattern</title>
+      <link>https://learngolang.net/tutorials/solve-word-pattern-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:33:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-word-pattern-problem-in-golang/</guid>
+      <description> Word Pattern </description>
+    </item>
+    
+    <item>
+      <title>Move Zeroes</title>
+      <link>https://learngolang.net/tutorials/solve-move-zeroes-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:32:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-move-zeroes-problem-in-golang/</guid>
+      <description> Move Zeroes </description>
+    </item>
+    
+    <item>
+      <title>First Bad Version</title>
+      <link>https://learngolang.net/tutorials/solve-first-bad-version-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:31:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-first-bad-version-problem-in-golang/</guid>
+      <description> First Bad Version </description>
+    </item>
+    
+    <item>
+      <title>Missing Number</title>
+      <link>https://learngolang.net/tutorials/solve-missing-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:30:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-missing-number-problem-in-golang/</guid>
+      <description> Missing Number </description>
+    </item>
+    
+    <item>
+      <title>Ugly Number</title>
+      <link>https://learngolang.net/tutorials/solve-ugly-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:29:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-ugly-number-problem-in-golang/</guid>
+      <description> Ugly Number </description>
+    </item>
+    
+    <item>
+      <title>Add Digits</title>
+      <link>https://learngolang.net/tutorials/solve-add-digits-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:28:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-add-digits-problem-in-golang/</guid>
+      <description> Add Digits </description>
+    </item>
+    
+    <item>
+      <title>Binary Tree Paths</title>
+      <link>https://learngolang.net/tutorials/solve-binary-tree-paths-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:27:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-tree-paths-problem-in-golang/</guid>
+      <description> Binary Tree Paths </description>
+    </item>
+    
+    <item>
+      <title>Valid Anagram</title>
+      <link>https://learngolang.net/tutorials/solve-valid-anagram-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:26:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-valid-anagram-problem-in-golang/</guid>
+      <description> Valid Anagram </description>
+    </item>
+    
+    <item>
+      <title>Delete Node in a Linked List</title>
+      <link>https://learngolang.net/tutorials/solve-delete-node-in-a-linked-list-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:25:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-delete-node-in-a-linked-list-problem-in-golang/</guid>
+      <description> Delete Node in a Linked List </description>
+    </item>
+    
+    <item>
+      <title>Lowest Common Ancestor of a Binary Search Tree</title>
+      <link>https://learngolang.net/tutorials/solve-lowest-common-ancestor-of-a-binary-search-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:24:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-lowest-common-ancestor-of-a-binary-search-tree-problem-in-golang/</guid>
+      <description> Lowest Common Ancestor of a Binary Search Tree </description>
+    </item>
+    
+    <item>
+      <title>Palindrome Linked List</title>
+      <link>https://learngolang.net/tutorials/solve-palindrome-linked-list-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:23:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-palindrome-linked-list-problem-in-golang/</guid>
+      <description> Palindrome Linked List </description>
+    </item>
+    
+    <item>
+      <title>Implement Queue using Stacks</title>
+      <link>https://learngolang.net/tutorials/solve-implement-queue-using-stacks-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:22:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-implement-queue-using-stacks-problem-in-golang/</guid>
+      <description> Implement Queue using Stacks </description>
+    </item>
+    
+    <item>
+      <title>Power of Two</title>
+      <link>https://learngolang.net/tutorials/solve-power-of-two-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:21:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-power-of-two-problem-in-golang/</guid>
+      <description> Power of Two </description>
+    </item>
+    
+    <item>
+      <title>Invert Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-invert-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:20:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-invert-binary-tree-problem-in-golang/</guid>
+      <description> Invert Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Implement Stack using Queues</title>
+      <link>https://learngolang.net/tutorials/solve-implement-stack-using-queues-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:19:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-implement-stack-using-queues-problem-in-golang/</guid>
+      <description> Implement Stack using Queues </description>
+    </item>
+    
+    <item>
+      <title>Contains Duplicate II</title>
+      <link>https://learngolang.net/tutorials/solve-contains-duplicate-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:18:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-contains-duplicate-ii-problem-in-golang/</guid>
+      <description> Contains Duplicate II </description>
+    </item>
+    
+    <item>
+      <title>Contains Duplicate</title>
+      <link>https://learngolang.net/tutorials/solve-contains-duplicate-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:17:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-contains-duplicate-problem-in-golang/</guid>
+      <description> Contains Duplicate </description>
+    </item>
+    
+    <item>
+      <title>Reverse Linked List</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-linked-list-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:16:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-linked-list-problem-in-golang/</guid>
+      <description> Reverse Linked List </description>
+    </item>
+    
+    <item>
+      <title>Isomorphic Strings</title>
+      <link>https://learngolang.net/tutorials/solve-isomorphic-strings-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:15:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-isomorphic-strings-problem-in-golang/</guid>
+      <description> Isomorphic Strings </description>
+    </item>
+    
+    <item>
+      <title>Count Primes</title>
+      <link>https://learngolang.net/tutorials/solve-count-primes-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:14:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-count-primes-problem-in-golang/</guid>
+      <description> Count Primes </description>
+    </item>
+    
+    <item>
+      <title>Remove Linked List Elements</title>
+      <link>https://learngolang.net/tutorials/solve-remove-linked-list-elements-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:13:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-remove-linked-list-elements-problem-in-golang/</guid>
+      <description> Remove Linked List Elements </description>
+    </item>
+    
+    <item>
+      <title>Happy Number</title>
+      <link>https://learngolang.net/tutorials/solve-happy-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:12:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-happy-number-problem-in-golang/</guid>
+      <description> Happy Number </description>
+    </item>
+    
+    <item>
+      <title>House Robber</title>
+      <link>https://learngolang.net/tutorials/solve-house-robber-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:11:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-house-robber-problem-in-golang/</guid>
+      <description> House Robber </description>
+    </item>
+    
+    <item>
+      <title>Rising Temperature</title>
+      <link>https://learngolang.net/tutorials/solve-rising-temperature-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:10:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-rising-temperature-problem-in-golang/</guid>
+      <description> Rising Temperature </description>
+    </item>
+    
+    <item>
+      <title>Delete Duplicate Emails</title>
+      <link>https://learngolang.net/tutorials/solve-delete-duplicate-emails-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:09:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-delete-duplicate-emails-problem-in-golang/</guid>
+      <description> Delete Duplicate Emails </description>
+    </item>
+    
+    <item>
+      <title>Tenth Line</title>
+      <link>https://learngolang.net/tutorials/solve-tenth-line-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:08:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-tenth-line-problem-in-golang/</guid>
+      <description> Tenth Line </description>
+    </item>
+    
+    <item>
+      <title>Valid Phone Numbers</title>
+      <link>https://learngolang.net/tutorials/solve-valid-phone-numbers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:07:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-valid-phone-numbers-problem-in-golang/</guid>
+      <description> Valid Phone Numbers </description>
+    </item>
+    
+    <item>
+      <title>Number of 1 Bits</title>
+      <link>https://learngolang.net/tutorials/solve-number-of-1-bits-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:06:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-number-of-1-bits-problem-in-golang/</guid>
+      <description> Number of 1 Bits </description>
+    </item>
+    
+    <item>
+      <title>Reverse Bits</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-bits-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:05:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-bits-problem-in-golang/</guid>
+      <description> Reverse Bits </description>
+    </item>
+    
+    <item>
+      <title>Rotate Array</title>
+      <link>https://learngolang.net/tutorials/solve-rotate-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:04:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-rotate-array-problem-in-golang/</guid>
+      <description> Rotate Array </description>
+    </item>
+    
+    <item>
+      <title>Customers Who Never Order</title>
+      <link>https://learngolang.net/tutorials/solve-customers-who-never-order-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:03:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-customers-who-never-order-problem-in-golang/</guid>
+      <description> Customers Who Never Order </description>
+    </item>
+    
+    <item>
+      <title>Duplicate Emails</title>
+      <link>https://learngolang.net/tutorials/solve-duplicate-emails-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:02:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-duplicate-emails-problem-in-golang/</guid>
+      <description> Duplicate Emails </description>
+    </item>
+    
+    <item>
+      <title>Employees Earning More Than Their Managers</title>
+      <link>https://learngolang.net/tutorials/solve-employees-earning-more-than-their-managers-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:01:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-employees-earning-more-than-their-managers-problem-in-golang/</guid>
+      <description> Employees Earning More Than Their Managers </description>
+    </item>
+    
+    <item>
+      <title>Second Highest Salary</title>
+      <link>https://learngolang.net/tutorials/solve-second-highest-salary-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 08:00:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-second-highest-salary-problem-in-golang/</guid>
+      <description> Second Highest Salary </description>
+    </item>
+    
+    <item>
+      <title>Combine Two Tables</title>
+      <link>https://learngolang.net/tutorials/solve-combine-two-tables-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:59:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-combine-two-tables-problem-in-golang/</guid>
+      <description> Combine Two Tables </description>
+    </item>
+    
+    <item>
+      <title>Factorial Trailing Zeroes</title>
+      <link>https://learngolang.net/tutorials/solve-factorial-trailing-zeroes-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:58:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-factorial-trailing-zeroes-problem-in-golang/</guid>
+      <description> Factorial Trailing Zeroes </description>
+    </item>
+    
+    <item>
+      <title>Excel Sheet Column Number</title>
+      <link>https://learngolang.net/tutorials/solve-excel-sheet-column-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:57:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-excel-sheet-column-number-problem-in-golang/</guid>
+      <description> Excel Sheet Column Number </description>
+    </item>
+    
+    <item>
+      <title>Majority Element</title>
+      <link>https://learngolang.net/tutorials/solve-majority-element-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:56:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-majority-element-problem-in-golang/</guid>
+      <description> Majority Element </description>
+    </item>
+    
+    <item>
+      <title>Excel Sheet Column Title</title>
+      <link>https://learngolang.net/tutorials/solve-excel-sheet-column-title-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:55:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-excel-sheet-column-title-problem-in-golang/</guid>
+      <description> Excel Sheet Column Title </description>
+    </item>
+    
+    <item>
+      <title>Two Sum II - Input array is sorted</title>
+      <link>https://learngolang.net/tutorials/solve-two-sum-ii-input-array-is-sorted-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:54:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-two-sum-ii-input-array-is-sorted-problem-in-golang/</guid>
+      <description> Two Sum II - Input array is sorted </description>
+    </item>
+    
+    <item>
+      <title>Intersection of Two Linked Lists</title>
+      <link>https://learngolang.net/tutorials/solve-intersection-of-two-linked-lists-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:53:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-intersection-of-two-linked-lists-problem-in-golang/</guid>
+      <description> Intersection of Two Linked Lists </description>
+    </item>
+    
+    <item>
+      <title>Min Stack</title>
+      <link>https://learngolang.net/tutorials/solve-min-stack-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:52:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-min-stack-problem-in-golang/</guid>
+      <description> Min Stack </description>
+    </item>
+    
+    <item>
+      <title>Linked List Cycle</title>
+      <link>https://learngolang.net/tutorials/solve-linked-list-cycle-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:51:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-linked-list-cycle-problem-in-golang/</guid>
+      <description> Linked List Cycle </description>
+    </item>
+    
+    <item>
+      <title>Single Number</title>
+      <link>https://learngolang.net/tutorials/solve-single-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:50:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-single-number-problem-in-golang/</guid>
+      <description> Single Number </description>
+    </item>
+    
+    <item>
+      <title>Valid Palindrome</title>
+      <link>https://learngolang.net/tutorials/solve-valid-palindrome-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:49:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-valid-palindrome-problem-in-golang/</guid>
+      <description> Valid Palindrome </description>
+    </item>
+    
+    <item>
+      <title>Best Time to Buy and Sell Stock II</title>
+      <link>https://learngolang.net/tutorials/solve-best-time-to-buy-and-sell-stock-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:48:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-best-time-to-buy-and-sell-stock-ii-problem-in-golang/</guid>
+      <description> Best Time to Buy and Sell Stock II </description>
+    </item>
+    
+    <item>
+      <title>Best Time to Buy and Sell Stock</title>
+      <link>https://learngolang.net/tutorials/solve-best-time-to-buy-and-sell-stock-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:47:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-best-time-to-buy-and-sell-stock-problem-in-golang/</guid>
+      <description> Best Time to Buy and Sell Stock </description>
+    </item>
+    
+    <item>
+      <title>Pascal&#39;s Triangle II</title>
+      <link>https://learngolang.net/tutorials/solve-pascals-triangle-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:46:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-pascals-triangle-ii-problem-in-golang/</guid>
+      <description> Pascal&amp;rsquo;s Triangle II </description>
+    </item>
+    
+    <item>
+      <title>Pascal&#39;s Triangle</title>
+      <link>https://learngolang.net/tutorials/solve-pascals-triangle-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:45:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-pascals-triangle-problem-in-golang/</guid>
+      <description> Pascal&amp;rsquo;s Triangle </description>
+    </item>
+    
+    <item>
+      <title>Path Sum</title>
+      <link>https://learngolang.net/tutorials/solve-path-sum-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:44:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-path-sum-problem-in-golang/</guid>
+      <description> Path Sum </description>
+    </item>
+    
+    <item>
+      <title>Minimum Depth of Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-minimum-depth-of-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:43:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-minimum-depth-of-binary-tree-problem-in-golang/</guid>
+      <description> Minimum Depth of Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Balanced Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-balanced-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:42:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-balanced-binary-tree-problem-in-golang/</guid>
+      <description> Balanced Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Convert Sorted Array to Binary Search Tree</title>
+      <link>https://learngolang.net/tutorials/solve-convert-sorted-array-to-binary-search-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:41:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-convert-sorted-array-to-binary-search-tree-problem-in-golang/</guid>
+      <description> Convert Sorted Array to Binary Search Tree </description>
+    </item>
+    
+    <item>
+      <title>Binary Tree Level Order Traversal II</title>
+      <link>https://learngolang.net/tutorials/solve-binary-tree-level-order-traversal-ii-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:40:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-binary-tree-level-order-traversal-ii-problem-in-golang/</guid>
+      <description> Binary Tree Level Order Traversal II </description>
+    </item>
+    
+    <item>
+      <title>Maximum Depth of Binary Tree</title>
+      <link>https://learngolang.net/tutorials/solve-maximum-depth-of-binary-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:39:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-maximum-depth-of-binary-tree-problem-in-golang/</guid>
+      <description> Maximum Depth of Binary Tree </description>
+    </item>
+    
+    <item>
+      <title>Symmetric Tree</title>
+      <link>https://learngolang.net/tutorials/solve-symmetric-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:38:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-symmetric-tree-problem-in-golang/</guid>
+      <description> Symmetric Tree </description>
+    </item>
+    
+    <item>
+      <title>Same Tree</title>
+      <link>https://learngolang.net/tutorials/solve-same-tree-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:37:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-same-tree-problem-in-golang/</guid>
+      <description> Same Tree </description>
+    </item>
+    
+    <item>
+      <title>Merge Sorted Array</title>
+      <link>https://learngolang.net/tutorials/solve-merge-sorted-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:36:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-merge-sorted-array-problem-in-golang/</guid>
+      <description> Merge Sorted Array </description>
+    </item>
+    
+    <item>
+      <title>Remove Duplicates from Sorted List</title>
+      <link>https://learngolang.net/tutorials/solve-remove-duplicates-from-sorted-list-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:35:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-remove-duplicates-from-sorted-list-problem-in-golang/</guid>
+      <description> Remove Duplicates from Sorted List </description>
+    </item>
+    
+    <item>
+      <title>Climbing Stairs</title>
+      <link>https://learngolang.net/tutorials/solve-climbing-stairs-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:34:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-climbing-stairs-problem-in-golang/</guid>
+      <description> Climbing Stairs </description>
+    </item>
+    
+    <item>
+      <title>Sqrt(x)</title>
+      <link>https://learngolang.net/tutorials/solve-sqrtx-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:33:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-sqrtx-problem-in-golang/</guid>
+      <description> Sqrt(x) </description>
+    </item>
+    
+    <item>
+      <title>Add Binary</title>
+      <link>https://learngolang.net/tutorials/solve-add-binary-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:32:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-add-binary-problem-in-golang/</guid>
+      <description> Add Binary </description>
+    </item>
+    
+    <item>
+      <title>Plus One</title>
+      <link>https://learngolang.net/tutorials/solve-plus-one-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:31:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-plus-one-problem-in-golang/</guid>
+      <description> Plus One </description>
+    </item>
+    
+    <item>
+      <title>Length of Last Word</title>
+      <link>https://learngolang.net/tutorials/solve-length-of-last-word-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:30:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-length-of-last-word-problem-in-golang/</guid>
+      <description> Length of Last Word </description>
+    </item>
+    
+    <item>
+      <title>Maximum Subarray</title>
+      <link>https://learngolang.net/tutorials/solve-maximum-subarray-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:29:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-maximum-subarray-problem-in-golang/</guid>
+      <description> Maximum Subarray </description>
+    </item>
+    
+    <item>
+      <title>Count and Say</title>
+      <link>https://learngolang.net/tutorials/solve-count-and-say-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:28:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-count-and-say-problem-in-golang/</guid>
+      <description> Count and Say </description>
+    </item>
+    
+    <item>
+      <title>Search Insert Position</title>
+      <link>https://learngolang.net/tutorials/solve-search-insert-position-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:27:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-search-insert-position-problem-in-golang/</guid>
+      <description> Search Insert Position </description>
+    </item>
+    
+    <item>
+      <title>Implement strStr()</title>
+      <link>https://learngolang.net/tutorials/solve-implement-strstr-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:26:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-implement-strstr-problem-in-golang/</guid>
+      <description> Implement strStr() </description>
+    </item>
+    
+    <item>
+      <title>Remove Element</title>
+      <link>https://learngolang.net/tutorials/solve-remove-element-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:25:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-remove-element-problem-in-golang/</guid>
+      <description> Remove Element </description>
+    </item>
+    
+    <item>
+      <title>Remove Duplicates from Sorted Array</title>
+      <link>https://learngolang.net/tutorials/solve-remove-duplicates-from-sorted-array-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:24:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-remove-duplicates-from-sorted-array-problem-in-golang/</guid>
+      <description> Remove Duplicates from Sorted Array </description>
+    </item>
+    
+    <item>
+      <title>Merge Two Sorted Lists</title>
+      <link>https://learngolang.net/tutorials/solve-merge-two-sorted-lists-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:23:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-merge-two-sorted-lists-problem-in-golang/</guid>
+      <description> Merge Two Sorted Lists </description>
+    </item>
+    
+    <item>
+      <title>Valid Parentheses</title>
+      <link>https://learngolang.net/tutorials/solve-valid-parentheses-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:22:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-valid-parentheses-problem-in-golang/</guid>
+      <description> Valid Parentheses </description>
+    </item>
+    
+    <item>
+      <title>Longest Common Prefix</title>
+      <link>https://learngolang.net/tutorials/solve-longest-common-prefix-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:21:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-longest-common-prefix-problem-in-golang/</guid>
+      <description> Longest Common Prefix </description>
+    </item>
+    
+    <item>
+      <title>Roman to Integer</title>
+      <link>https://learngolang.net/tutorials/solve-roman-to-integer-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:20:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-roman-to-integer-problem-in-golang/</guid>
+      <description> Roman to Integer </description>
+    </item>
+    
+    <item>
+      <title>Palindrome Number</title>
+      <link>https://learngolang.net/tutorials/solve-palindrome-number-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:19:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-palindrome-number-problem-in-golang/</guid>
+      <description> Palindrome Number </description>
+    </item>
+    
+    <item>
+      <title>Reverse Integer</title>
+      <link>https://learngolang.net/tutorials/solve-reverse-integer-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:18:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-reverse-integer-problem-in-golang/</guid>
+      <description> Reverse Integer </description>
+    </item>
+    
+    <item>
+      <title>Two Sum</title>
+      <link>https://learngolang.net/tutorials/solve-two-sum-problem-in-golang/</link>
+      <pubDate>Mon, 12 Aug 2019 07:17:26 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/solve-two-sum-problem-in-golang/</guid>
+      <description> Two Sum </description>
+    </item>
+    
+    <item>
+      <title>Print Look and Say Sequence in Go</title>
+      <link>https://learngolang.net/tutorials/print-look-and-say-sequence-in-go/</link>
+      <pubDate>Sun, 05 May 2019 23:17:54 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/print-look-and-say-sequence-in-go/</guid>
+      <description>Look-and-say sequence In mathematics, the look-and-say sequence is the sequence of integers beginning as follows:
 1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, ...
 To generate a member of the sequence from the previous member, read off the digits of the previous member, counting the number of digits in groups of the same digit. For example:
-1 is read off as &amp;ldquo;one 1&amp;rdquo; or 11. 11 is read off as &amp;ldquo;two 1s&amp;rdquo; or 21.</description></item><item><title>How to convert integer to english words in go</title><link>https://learngolang.net/tutorials/how-to-convert-integer-to-english-words-in-golang/</link><pubDate>Fri, 26 Apr 2019 11:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-convert-integer-to-english-words-in-golang/</guid><description>The following code converts number to their english spelling.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;math&amp;quot; ) func main() { for i := 0; i &amp;lt;= 10000; i++ { fmt.Println(i, spell(i)) } // i := 88 // fmt.Println(i, spell(i)) } func pow(i int, p int) int { return int(math.Pow(1000, float64(p))) } func spell(n int) string { to19 := []string{&amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;, &amp;quot;Six&amp;quot;, &amp;quot;Seven&amp;quot;, &amp;quot;Eight&amp;quot;, &amp;quot;Nine&amp;quot;, &amp;quot;Ten&amp;quot;, &amp;quot;Eleven&amp;quot;, &amp;quot;Twelve&amp;quot;, &amp;quot;,Thirteen&amp;quot;, &amp;quot;Fourteen&amp;quot;, &amp;quot;Fifteen&amp;quot;, &amp;quot;Sixteen&amp;quot;, &amp;quot;Seventeen&amp;quot;, &amp;quot;Eighteen&amp;quot;, &amp;quot;Nineteen&amp;quot;} tens := []string{&amp;quot;Twenty&amp;quot;, &amp;quot;Thirty&amp;quot;, &amp;quot;Forty&amp;quot;, &amp;quot;Fifty&amp;quot;, &amp;quot;Sixty&amp;quot;, &amp;quot;Seventy&amp;quot;, &amp;quot;Eighty&amp;quot;, &amp;quot;Ninety&amp;quot;} if n == 0 { return &amp;quot;&amp;quot; } if n &amp;lt; 20 { return to19[n-1] } if n &amp;lt; 100 { return tens[n/10-2] + &amp;quot; &amp;quot; + spell(n%10) } if n &amp;lt; 1000 { return to19[n/100-1] + &amp;quot; Hundred &amp;quot; + spell(n%100) } for idx, w := range []string{&amp;quot;Thousand&amp;quot;, &amp;quot;Million&amp;quot;, &amp;quot;Billion&amp;quot;} { p := idx + 1 if n &amp;lt; pow(1000, (p+1)) { return spell(n/pow(1000, p)) + &amp;quot; &amp;quot; + w + &amp;quot; &amp;quot; + spell(n%pow(1000, p)) } } return &amp;quot;error&amp;quot; }</description></item><item><title>How to solve ransom note problem in go</title><link>https://learngolang.net/tutorials/ransom-note-problem/</link><pubDate>Sun, 21 Apr 2019 11:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/ransom-note-problem/</guid><description>Here is a solution using an array for solving ransom note problem in golang.
-package main import &amp;quot;fmt&amp;quot; func main() { note := buildCharFrequencyTable(&amp;quot;ma said&amp;quot;) magzine := buildCharFrequencyTable(&amp;quot;aaimmds&amp;quot;) fmt.Println(canBuildNote(note, magzine)) } func buildCharFrequencyTable(str string) []int { counter := []int{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, } for _, char := range str { c := int(char - &#39;a&#39;) if c &amp;gt; 0 { counter[c]++ } } return counter } func canBuildNote(note []int, magzine []int) bool { for i := 0; i &amp;lt; len(magzine); i++ { if note[i] &amp;gt; magzine[i] { return false } } return true } Here is another solution to this problem using a hashtable</description></item><item><title>How to convert number to roman numerals</title><link>https://learngolang.net/tutorials/how-to-convert-numbers-to-roman-numerals-in-golang/</link><pubDate>Mon, 15 Apr 2019 11:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-convert-numbers-to-roman-numerals-in-golang/</guid><description>Summary Converting integers to markdown is fairly simple.
+ 1 is read off as &amp;ldquo;one 1&amp;rdquo; or 11. 11 is read off as &amp;ldquo;two 1s&amp;rdquo; or 21.</description>
+    </item>
+    
+    <item>
+      <title>How to convert integer to english words in go</title>
+      <link>https://learngolang.net/tutorials/how-to-convert-integer-to-english-words-in-golang/</link>
+      <pubDate>Fri, 26 Apr 2019 11:21:19 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-convert-integer-to-english-words-in-golang/</guid>
+      <description>The following code converts number to their english spelling.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;math&amp;quot; ) func main() { for i := 0; i &amp;lt;= 10000; i++ { fmt.Println(i, spell(i)) } // i := 88 // fmt.Println(i, spell(i)) } func pow(i int, p int) int { return int(math.Pow(1000, float64(p))) } func spell(n int) string { to19 := []string{&amp;quot;One&amp;quot;, &amp;quot;Two&amp;quot;, &amp;quot;Three&amp;quot;, &amp;quot;Four&amp;quot;, &amp;quot;Five&amp;quot;, &amp;quot;Six&amp;quot;, &amp;quot;Seven&amp;quot;, &amp;quot;Eight&amp;quot;, &amp;quot;Nine&amp;quot;, &amp;quot;Ten&amp;quot;, &amp;quot;Eleven&amp;quot;, &amp;quot;Twelve&amp;quot;, &amp;quot;,Thirteen&amp;quot;, &amp;quot;Fourteen&amp;quot;, &amp;quot;Fifteen&amp;quot;, &amp;quot;Sixteen&amp;quot;, &amp;quot;Seventeen&amp;quot;, &amp;quot;Eighteen&amp;quot;, &amp;quot;Nineteen&amp;quot;} tens := []string{&amp;quot;Twenty&amp;quot;, &amp;quot;Thirty&amp;quot;, &amp;quot;Forty&amp;quot;, &amp;quot;Fifty&amp;quot;, &amp;quot;Sixty&amp;quot;, &amp;quot;Seventy&amp;quot;, &amp;quot;Eighty&amp;quot;, &amp;quot;Ninety&amp;quot;} if n == 0 { return &amp;quot;&amp;quot; } if n &amp;lt; 20 { return to19[n-1] } if n &amp;lt; 100 { return tens[n/10-2] + &amp;quot; &amp;quot; + spell(n%10) } if n &amp;lt; 1000 { return to19[n/100-1] + &amp;quot; Hundred &amp;quot; + spell(n%100) } for idx, w := range []string{&amp;quot;Thousand&amp;quot;, &amp;quot;Million&amp;quot;, &amp;quot;Billion&amp;quot;} { p := idx + 1 if n &amp;lt; pow(1000, (p+1)) { return spell(n/pow(1000, p)) + &amp;quot; &amp;quot; + w + &amp;quot; &amp;quot; + spell(n%pow(1000, p)) } } return &amp;quot;error&amp;quot; }  </description>
+    </item>
+    
+    <item>
+      <title>How to solve ransom note problem in go</title>
+      <link>https://learngolang.net/tutorials/ransom-note-problem/</link>
+      <pubDate>Sun, 21 Apr 2019 11:21:19 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/ransom-note-problem/</guid>
+      <description>Here is a solution using an array for solving ransom note problem in golang.
+package main import &amp;quot;fmt&amp;quot; func main() { note := buildCharFrequencyTable(&amp;quot;ma said&amp;quot;) magzine := buildCharFrequencyTable(&amp;quot;aaimmds&amp;quot;) fmt.Println(canBuildNote(note, magzine)) } func buildCharFrequencyTable(str string) []int { counter := []int{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, } for _, char := range str { c := int(char - &#39;a&#39;) if c &amp;gt; 0 { counter[c]++ } } return counter } func canBuildNote(note []int, magzine []int) bool { for i := 0; i &amp;lt; len(magzine); i++ { if note[i] &amp;gt; magzine[i] { return false } } return true }  Here is another solution to this problem using a hashtable</description>
+    </item>
+    
+    <item>
+      <title>How to convert number to roman numerals</title>
+      <link>https://learngolang.net/tutorials/how-to-convert-numbers-to-roman-numerals-in-golang/</link>
+      <pubDate>Mon, 15 Apr 2019 11:21:19 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-convert-numbers-to-roman-numerals-in-golang/</guid>
+      <description>Summary Converting integers to markdown is fairly simple.
 Here are 13 roman numerals and their decimal equivalent.
-Decimal Roman 1 I 4 IV 5 V 9 IX 10 X 40 XL 50 L 90 XC 100 C 400 CD 500 D 900 CM 1000 M The process is as follows, for any given decimal number X:</description></item><item><title>Count number of binary search tree created for array of size n</title><link>https://learngolang.net/tutorials/count-number-of-binary-search-tree-created-for-array-of-size-n/</link><pubDate>Fri, 09 Nov 2018 21:47:32 +0000</pubDate><guid>https://learngolang.net/tutorials/count-number-of-binary-search-tree-created-for-array-of-size-n/</guid><description> This problem is an example of &amp;ldquo;catalan Numbers problem&amp;rdquo;
+   Decimal Roman     1 I   4 IV   5 V   9 IX   10 X   40 XL   50 L   90 XC   100 C   400 CD   500 D   900 CM   1000 M    The process is as follows, for any given decimal number X:</description>
+    </item>
+    
+    <item>
+      <title>Count number of binary search tree created for array of size n</title>
+      <link>https://learngolang.net/tutorials/count-number-of-binary-search-tree-created-for-array-of-size-n/</link>
+      <pubDate>Fri, 09 Nov 2018 21:47:32 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/count-number-of-binary-search-tree-created-for-array-of-size-n/</guid>
+      <description> This problem is an example of &amp;ldquo;catalan Numbers problem&amp;rdquo;
 The Question is as follows Count number of binary search tree created for array of size n
-Solution in golang package main import ( &amp;quot;fmt&amp;quot; ) func main() { for i := 0; i &amp;lt; 20; i++ { fmt.Println(i, countTreesRec(i)) } } func countTreesRec(numKeys int) int { if numKeys &amp;lt;= 1 { return 1 } else { sum := 0 for root := 1; root &amp;lt;= numKeys; root++ { left := countTreesRec(root - 1) right := countTreesRec(numKeys - root) sum += left * right } return sum } }</description></item><item><title>Find Nth Catalan Number in Golang</title><link>https://learngolang.net/tutorials/find-nth-catalan-number-in-golang/</link><pubDate>Fri, 09 Nov 2018 20:52:48 +0000</pubDate><guid>https://learngolang.net/tutorials/find-nth-catalan-number-in-golang/</guid><description>Compute n&amp;rsquo;th Catalan number In combinatorial mathematics, the Catalan numbers form a sequence of natural numbers that occur in various counting problems, often involving recursively-defined objects. They are named after the Belgian mathematician Eugène Charles Catalan.
+Solution in golang package main import ( &amp;quot;fmt&amp;quot; ) func main() { for i := 0; i &amp;lt; 20; i++ { fmt.Println(i, countTreesRec(i)) } } func countTreesRec(numKeys int) int { if numKeys &amp;lt;= 1 { return 1 } else { sum := 0 for root := 1; root &amp;lt;= numKeys; root++ { left := countTreesRec(root - 1) right := countTreesRec(numKeys - root) sum += left * right } return sum } }  </description>
+    </item>
+    
+    <item>
+      <title>Find Nth Catalan Number in Golang</title>
+      <link>https://learngolang.net/tutorials/find-nth-catalan-number-in-golang/</link>
+      <pubDate>Fri, 09 Nov 2018 20:52:48 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/find-nth-catalan-number-in-golang/</guid>
+      <description>Compute n&amp;rsquo;th Catalan number In combinatorial mathematics, the Catalan numbers form a sequence of natural numbers that occur in various counting problems, often involving recursively-defined objects. They are named after the Belgian mathematician Eugène Charles Catalan.
 They can be computed using this formula:
 C(2n, n)/(n + 1)
 Read more about them here
-Recursive code in go func main() { for i := 0; i &amp;lt; 20; i++ { fmt.Println(i, catalan(i)) } //0 1 //1 1 //2 2 //3 5 //4 14 //5 42 //6 132 //7 429 //8 1430 //9 4862 //10 16796 //11 58786 //12 208012 //13 742900 //14 2674440 //15 9694845 //16 35357670 //17 129644790 //18 477638700 //19 1767263190 } // catalan(n) is sum of catalan(i)*catalan(n-i-1) func catalan(n int) int { // Base case if n &amp;lt;= 1 { return 1 } res := 0 for i := 0; i &amp;lt; n; i++ { res += catalan(i) * catalan(n-i-1) } return res } Using Binomial Coefficient We can also use the below formula to find nth catalan number in O(n) time.</description></item><item><title>How to Remove Duplicates From Sorted Array in Go</title><link>https://learngolang.net/tutorials/how-to-remove-duplicates-from-sorted-array-in-go/</link><pubDate>Fri, 09 Nov 2018 20:02:06 +0000</pubDate><guid>https://learngolang.net/tutorials/how-to-remove-duplicates-from-sorted-array-in-go/</guid><description>Problem Statement Given a sorted array of numbers, remove the duplicates in-place such that each element appear only once and return the new length.
-Example 1 Given nums = [1,1,2],
+Recursive code in go func main() { for i := 0; i &amp;lt; 20; i++ { fmt.Println(i, catalan(i)) } //0 1 //1 1 //2 2 //3 5 //4 14 //5 42 //6 132 //7 429 //8 1430 //9 4862 //10 16796 //11 58786 //12 208012 //13 742900 //14 2674440 //15 9694845 //16 35357670 //17 129644790 //18 477638700 //19 1767263190 } // catalan(n) is sum of catalan(i)*catalan(n-i-1) func catalan(n int) int { // Base case if n &amp;lt;= 1 { return 1 } res := 0 for i := 0; i &amp;lt; n; i++ { res += catalan(i) * catalan(n-i-1) } return res }  Using Binomial Coefficient We can also use the below formula to find nth catalan number in O(n) time.</description>
+    </item>
+    
+    <item>
+      <title>How to Remove Duplicates From Sorted Array in Go</title>
+      <link>https://learngolang.net/tutorials/how-to-remove-duplicates-from-sorted-array-in-go/</link>
+      <pubDate>Fri, 09 Nov 2018 20:02:06 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-remove-duplicates-from-sorted-array-in-go/</guid>
+      <description>Problem Statement Given a sorted array of numbers, remove the duplicates in-place such that each element appear only once and return the new length.
+Example 1  Given nums = [1,1,2],
 Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively.
 It doesn&amp;rsquo;t matter what you leave beyond the returned length.
-Example 2 Given nums = [0,0,1,1,1,2,2,3,3,4],
-Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description></item><item><title>How to Remove All Files in a Directory in Go</title><link>https://learngolang.net/tutorials/how-to-remove-all-files-in-a-directory-in-go/</link><pubDate>Sun, 04 Nov 2018 12:45:25 +0000</pubDate><guid>https://learngolang.net/tutorials/how-to-remove-all-files-in-a-directory-in-go/</guid><description>Built in Options There, always is a need to delete all files in a directory in golang.
+ Example 2  Given nums = [0,0,1,1,1,2,2,3,3,4],
+Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description>
+    </item>
+    
+    <item>
+      <title>How to Remove All Files in a Directory in Go</title>
+      <link>https://learngolang.net/tutorials/how-to-remove-all-files-in-a-directory-in-go/</link>
+      <pubDate>Sun, 04 Nov 2018 12:45:25 +0000</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-remove-all-files-in-a-directory-in-go/</guid>
+      <description>Built in Options There, always is a need to delete all files in a directory in golang.
 os.RemoveAll function is used a lot. The documentation says,
-RemoveAll removes path and any children it contains. It removes everything it can but returns the first error it encounters. If the path does not exist, RemoveAll returns nil (no error).
-Here is a quick example func main() { err := os.</description></item><item><title>How to copy a file in go</title><link>https://learngolang.net/tutorials/how-to-copy-file-in-go/</link><pubDate>Fri, 12 Oct 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-copy-file-in-go/</guid><description>Here is a snippet, which copies a file from source to destination.
-package main import ( &amp;quot;io&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { // Open original file source, err := os.Open(&amp;quot;foo.txt&amp;quot;) if err != nil { log.Fatal(err) } defer source.Close() // Create new file destination, err := os.Create(&amp;quot;bar.txt&amp;quot;) if err != nil { log.Fatal(err) } defer destination.Close() // Copy the bytes to destination from source bytesWritten, err := io.Copy(destination, source) if err !</description></item><item><title>How to truncate a file in go</title><link>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 22:33:21 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</guid><description>Truncating a file is very rare but incase yer wondering how to do it in go, here is a snippet.
+ RemoveAll removes path and any children it contains. It removes everything it can but returns the first error it encounters. If the path does not exist, RemoveAll returns nil (no error).
+ Here is a quick example func main() { err := os.</description>
+    </item>
+    
+    <item>
+      <title>How to copy a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-copy-file-in-go/</link>
+      <pubDate>Fri, 12 Oct 2018 21:21:19 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-copy-file-in-go/</guid>
+      <description>Here is a snippet, which copies a file from source to destination.
+package main import ( &amp;quot;io&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { // Open original file source, err := os.Open(&amp;quot;foo.txt&amp;quot;) if err != nil { log.Fatal(err) } defer source.Close() // Create new file destination, err := os.Create(&amp;quot;bar.txt&amp;quot;) if err != nil { log.Fatal(err) } defer destination.Close() // Copy the bytes to destination from source bytesWritten, err := io.Copy(destination, source) if err !</description>
+    </item>
+    
+    <item>
+      <title>How to truncate a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</link>
+      <pubDate>Fri, 05 Oct 2018 22:33:21 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-truncate-a-file-in-go/</guid>
+      <description>Truncating a file is very rare but incase yer wondering how to do it in go, here is a snippet.
 This code will truncate a file to 50 bytes. If the file is less than 50 bytes the original contents will remain at the beginning, and the rest of the space is filled will null bytes.
-If it is over 50 bytes, then everything after 50 bytes will be lost.</description></item><item><title>How to append in a file in go</title><link>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 22:20:24 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</guid><description>Here is a snippet which shows how to append data in a file in golang.
+If it is over 50 bytes, then everything after 50 bytes will be lost.</description>
+    </item>
+    
+    <item>
+      <title>How to append in a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</link>
+      <pubDate>Fri, 05 Oct 2018 22:20:24 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-append-in-a-file-in-go/</guid>
+      <description>Here is a snippet which shows how to append data in a file in golang.
 We will use os.OpenFile with os._APPEND flag.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { for i := 0; i &amp;lt; 10; i++ { append(fmt.Sprintf(&amp;quot;line %d \n&amp;quot;, i)) } } func append(text string) { f, err := os.OpenFile(&amp;quot;myfile.txt&amp;quot;, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644) if err != nil { panic(err) } defer f.Close() f.WriteString(text) } Here is a handly list of other flags which can be combined togther and used</description></item><item><title>How to change permission, timestamps and ownership of a file in go</title><link>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</guid><description>Change Permission Package os, has a handy Chmod method, just like the command line interface in Linux .
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chmod(&amp;quot;myfile.txt&amp;quot;, 0777) if err != nil { fmt.Println(err) } } Change Ownership There is also a Chown
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chown(&amp;quot;myFile.txt&amp;quot;, os.Getuid(), os.Getgid()) if err != nil { fmt.Println(err) } } Change timestamps As well as a Chtimes</description></item><item><title>How to write a file in go</title><link>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</guid><description>The quickest way to write a file with some bytes is to use ioutil.WriteFile
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;io/ioutil&amp;quot; ) func main() { err := ioutil.WriteFile(&amp;quot;somefile&amp;quot;, []byte(&amp;quot;foo\n&amp;quot;), 0644) if err != nil { fmt.Println(&amp;quot;error while writing file&amp;quot;) } } A more explicit way could be to use os.Create
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { f, err := os.Create(&amp;quot;foo.dat&amp;quot;) if err != nil { fmt.Println(&amp;quot;error while creating file&amp;quot;) } defer f.</description></item><item><title>How to create a file in go</title><link>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</link><pubDate>Fri, 05 Oct 2018 10:11:33 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</guid><description>Go lets you easily create and write a new file.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { for i := 0; i &amp;lt; 10; i++ { append(fmt.Sprintf(&amp;quot;line %d \n&amp;quot;, i)) } } func append(text string) { f, err := os.OpenFile(&amp;quot;myfile.txt&amp;quot;, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644) if err != nil { panic(err) } defer f.Close() f.WriteString(text) }  Here is a handly list of other flags which can be combined togther and used</description>
+    </item>
+    
+    <item>
+      <title>How to change permission, timestamps and ownership of a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</link>
+      <pubDate>Fri, 05 Oct 2018 21:21:19 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-change-permission-timestamps-and-ownership-of-a-file-in-go/</guid>
+      <description>Change Permission Package os, has a handy Chmod method, just like the command line interface in Linux .
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chmod(&amp;quot;myfile.txt&amp;quot;, 0777) if err != nil { fmt.Println(err) } }  Change Ownership There is also a Chown
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Chown(&amp;quot;myFile.txt&amp;quot;, os.Getuid(), os.Getgid()) if err != nil { fmt.Println(err) } }  Change timestamps As well as a Chtimes</description>
+    </item>
+    
+    <item>
+      <title>How to write a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</link>
+      <pubDate>Fri, 05 Oct 2018 21:21:19 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-write-a-file-in-go/</guid>
+      <description>The quickest way to write a file with some bytes is to use ioutil.WriteFile
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;io/ioutil&amp;quot; ) func main() { err := ioutil.WriteFile(&amp;quot;somefile&amp;quot;, []byte(&amp;quot;foo\n&amp;quot;), 0644) if err != nil { fmt.Println(&amp;quot;error while writing file&amp;quot;) } }  A more explicit way could be to use os.Create
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { f, err := os.Create(&amp;quot;foo.dat&amp;quot;) if err != nil { fmt.Println(&amp;quot;error while creating file&amp;quot;) } defer f.</description>
+    </item>
+    
+    <item>
+      <title>How to create a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</link>
+      <pubDate>Fri, 05 Oct 2018 10:11:33 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-create-a-file-in-go/</guid>
+      <description>Go lets you easily create and write a new file.
 Here is an example using create from os package.
-package main import &amp;quot;os&amp;quot; func main() { //create a file f, err := os.Create(&amp;quot;foo&amp;quot;) if err != nil { panic(err) } //make sure it closes. defer f.Close() } os.Create creates a file with default mode 0666 , and default file descriptor as O_RDWR .
+package main import &amp;quot;os&amp;quot; func main() { //create a file f, err := os.Create(&amp;quot;foo&amp;quot;) if err != nil { panic(err) } //make sure it closes. defer f.Close() }  os.Create creates a file with default mode 0666 , and default file descriptor as O_RDWR .
 Here is another explicit example
-package main import &amp;quot;os&amp;quot; func main() { f, err := os.</description></item><item><title>How to check file permissions in go</title><link>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</link><pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</guid><description>package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { var perms = []int{os.O_RDONLY, os.O_WRONLY} for perm := range perms { file, err := os.OpenFile(&amp;quot;myFile.txt&amp;quot;, perm, 0666) if err != nil { if os.IsNotExist(err) { panic(&amp;quot;File not found.&amp;quot;) } if os.IsPermission(err) { fmt.Println(fmt.Sprintf(&amp;quot;Error: %v permission denied.&amp;quot;, perm)) } } file.Close() } }</description></item><item><title>How to delete a file in go</title><link>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</link><pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</guid><description>The os package has os.Remove function, which is used to delete a file as shown below.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Remove(&amp;quot;test.txt&amp;quot;) if err != nil { fmt.Println(err) } }</description></item><item><title>How to get fileinfo in go</title><link>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</link><pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</guid><description>os.stat is used in golang to get all the meta information about a file.
+package main import &amp;quot;os&amp;quot; func main() { f, err := os.</description>
+    </item>
+    
+    <item>
+      <title>How to check file permissions in go</title>
+      <link>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</link>
+      <pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-check-file-permissions-in-go/</guid>
+      <description>package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { var perms = []int{os.O_RDONLY, os.O_WRONLY} for perm := range perms { file, err := os.OpenFile(&amp;quot;myFile.txt&amp;quot;, perm, 0666) if err != nil { if os.IsNotExist(err) { panic(&amp;quot;File not found.&amp;quot;) } if os.IsPermission(err) { fmt.Println(fmt.Sprintf(&amp;quot;Error: %v permission denied.&amp;quot;, perm)) } } file.Close() } }  </description>
+    </item>
+    
+    <item>
+      <title>How to delete a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</link>
+      <pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-delete-a-file-in-go/</guid>
+      <description>The os package has os.Remove function, which is used to delete a file as shown below.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Remove(&amp;quot;test.txt&amp;quot;) if err != nil { fmt.Println(err) } }  </description>
+    </item>
+    
+    <item>
+      <title>How to get fileinfo in go</title>
+      <link>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</link>
+      <pubDate>Tue, 02 Oct 2018 22:43:02 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-get-file-info-in-go/</guid>
+      <description>os.stat is used in golang to get all the meta information about a file.
 os.stat will return a fileinfo object or an error if the file is not found.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { fileInfo, err := os.Stat(&amp;quot;myfile.txt&amp;quot;) if err != nil { log.Fatal(err) } fmt.Println(&amp;quot;File name:&amp;quot;, fileInfo.Name()) fmt.Println(&amp;quot;Size in bytes:&amp;quot;, fileInfo.Size()) fmt.Println(&amp;quot;Permissions:&amp;quot;, fileInfo.Mode()) fmt.Println(&amp;quot;Last modified:&amp;quot;, fileInfo.ModTime()) fmt.Println(&amp;quot;Is Directory: &amp;quot;, fileInfo.IsDir()) fmt.Printf(&amp;quot;System interface type: %T\n&amp;quot;, fileInfo.</description></item><item><title>Linking and symlink a file in go</title><link>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</link><pubDate>Tue, 02 Oct 2018 21:21:19 +0100</pubDate><guid>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</guid><description>A Link in Linux is just a pointer to a file or a directory.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;log&amp;quot; &amp;quot;os&amp;quot; ) func main() { fileInfo, err := os.Stat(&amp;quot;myfile.txt&amp;quot;) if err != nil { log.Fatal(err) } fmt.Println(&amp;quot;File name:&amp;quot;, fileInfo.Name()) fmt.Println(&amp;quot;Size in bytes:&amp;quot;, fileInfo.Size()) fmt.Println(&amp;quot;Permissions:&amp;quot;, fileInfo.Mode()) fmt.Println(&amp;quot;Last modified:&amp;quot;, fileInfo.ModTime()) fmt.Println(&amp;quot;Is Directory: &amp;quot;, fileInfo.IsDir()) fmt.Printf(&amp;quot;System interface type: %T\n&amp;quot;, fileInfo.</description>
+    </item>
+    
+    <item>
+      <title>Linking and symlink a file in go</title>
+      <link>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</link>
+      <pubDate>Tue, 02 Oct 2018 21:21:19 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/linking-and-symlink-files-using-go/</guid>
+      <description>A Link in Linux is just a pointer to a file or a directory.
 A hardlink is a new pointer to the same file, hard links actually have file contents.
 A softlink does not point directly to the file, and is only a reference. softlinks are also called symlink
-Hard Linking in golang package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Link(&amp;quot;original.txt&amp;quot;, &amp;quot;hardlink.txt&amp;quot;) if err !</description></item><item><title>How to check if a file exists in go</title><link>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</link><pubDate>Mon, 01 Oct 2018 18:02:05 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</guid><description>Here is a quick snippet to check if a file exists in go
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { if _, err := os.Stat(&amp;quot;somefile&amp;quot;); os.IsNotExist(err) { fmt.Println(&amp;quot;path to \&amp;quot;somefile\&amp;quot; does not exist&amp;quot;) } } In an edge case a file might disappear between an exist check and open
-So, it might be a good idea to always open a file and check for returned err.</description></item><item><title>How to rename and move a file in go</title><link>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</link><pubDate>Sun, 02 Sep 2018 22:43:02 +0100</pubDate><guid>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</guid><description>To rename a file there is os.Rename method, which takes original name and the new name.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { oldname := &amp;quot;file1.txt&amp;quot; newname := &amp;quot;file2.txt&amp;quot; err := os.Rename(oldname, newname) if err != nil { fmt.Println(err) } } The same method can be used to move the file as well.
-package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { originalPath := &amp;quot;file1.txt&amp;quot; newPath := &amp;quot;/some/other/folder/file2.</description></item></channel></rss>
+Hard Linking in golang package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { err := os.Link(&amp;quot;original.txt&amp;quot;, &amp;quot;hardlink.txt&amp;quot;) if err !</description>
+    </item>
+    
+    <item>
+      <title>How to check if a file exists in go</title>
+      <link>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</link>
+      <pubDate>Mon, 01 Oct 2018 18:02:05 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-check-if-a-file-exists-in-go/</guid>
+      <description>Here is a quick snippet to check if a file exists in go
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { if _, err := os.Stat(&amp;quot;somefile&amp;quot;); os.IsNotExist(err) { fmt.Println(&amp;quot;path to \&amp;quot;somefile\&amp;quot; does not exist&amp;quot;) } }  In an edge case a file might disappear between an exist check and open
+So, it might be a good idea to always open a file and check for returned err.</description>
+    </item>
+    
+    <item>
+      <title>How to rename and move a file in go</title>
+      <link>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</link>
+      <pubDate>Sun, 02 Sep 2018 22:43:02 +0100</pubDate>
+      
+      <guid>https://learngolang.net/tutorials/how-to-rename-and-move-a-file-in-go/</guid>
+      <description>To rename a file there is os.Rename method, which takes original name and the new name.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { oldname := &amp;quot;file1.txt&amp;quot; newname := &amp;quot;file2.txt&amp;quot; err := os.Rename(oldname, newname) if err != nil { fmt.Println(err) } }  The same method can be used to move the file as well.
+package main import ( &amp;quot;fmt&amp;quot; &amp;quot;os&amp;quot; ) func main() { originalPath := &amp;quot;file1.txt&amp;quot; newPath := &amp;quot;/some/other/folder/file2.</description>
+    </item>
+    
+  </channel>
+</rss>
