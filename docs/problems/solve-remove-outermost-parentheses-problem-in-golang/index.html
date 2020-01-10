@@ -2,8 +2,56 @@
 <a href=https://learngolang.net/tutorials>Archive</a>
 <a href=https://learngolang.net/tags>Tags</a>
 <a href=https://learngolang.net/about>About</a>
-<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>Remove Outermost Parentheses</h1><h2 class=headline>Aug 12, 2019 11:34
-· 3 words
-· 1 minute read
-<span class=tags></span></h2></header><section id=post-body><h3 id=remove-outermost-parentheses>Remove Outermost Parentheses</h3></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2020 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>Remove Outermost Parentheses</h1><h2 class=headline>Jan 10, 2020 11:34
+· 411 words
+· 2 minute read
+<span class=tags></span></h2></header><section id=post-body><h3 id=remove-outermost-parentheses>Remove Outermost Parentheses</h3><h4 id=problem-statement>Problem Statement</h4><p>A valid parentheses string is either empty <strong>(""), &ldquo;(&rdquo; + A + &ldquo;)"</strong>, or <strong>A + B</strong>, where A and B are valid parentheses strings, and + represents string concatenation. For example, <strong>"", &ldquo;()", &ldquo;(())()", and &ldquo;(()(()))"</strong> are all valid parentheses strings.</p><p>A valid parentheses string S is primitive if it is nonempty, and there does not exist a way to split it into S = A+B, with A and B nonempty valid parentheses strings.</p><p>Given a valid parentheses string S, consider its primitive decomposition: <strong>S = P_1 + P_2 + &mldr; + P_k</strong>, where P_i are primitive valid parentheses strings.</p><p>Return S after removing the outermost parentheses of every primitive string in the primitive decomposition of S.</p><p><strong>Example 1:</strong></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Input: <span style=color:#e6db74>&#34;(()())(())&#34;</span>
+Output: <span style=color:#e6db74>&#34;()()()&#34;</span>
+Explanation: 
+The input string is <span style=color:#e6db74>&#34;(()())(())&#34;</span>, with primitive decomposition <span style=color:#e6db74>&#34;(()())&#34;</span> + <span style=color:#e6db74>&#34;(())&#34;</span>.
+After removing outer parentheses of each part, this is <span style=color:#e6db74>&#34;()()&#34;</span> + <span style=color:#e6db74>&#34;()&#34;</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;()()()&#34;</span>.
+</code></pre></div><p><strong>Example 2</strong></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Input: <span style=color:#e6db74>&#34;(()())(())(()(()))&#34;</span>
+Output: <span style=color:#e6db74>&#34;()()()()(())&#34;</span>
+Explanation: 
+The input string is <span style=color:#e6db74>&#34;(()())(())(()(()))&#34;</span>, with primitive decomposition <span style=color:#e6db74>&#34;(()())&#34;</span> + <span style=color:#e6db74>&#34;(())&#34;</span> + <span style=color:#e6db74>&#34;(()(()))&#34;</span>.
+After removing outer parentheses of each part, this is <span style=color:#e6db74>&#34;()()&#34;</span> + <span style=color:#e6db74>&#34;()&#34;</span> + <span style=color:#e6db74>&#34;()(())&#34;</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;()()()()(())&#34;</span>.
+</code></pre></div><p><strong>Example 3</strong></p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>Input: <span style=color:#e6db74>&#34;()()&#34;</span>
+Output: <span style=color:#e6db74>&#34;&#34;</span>
+Explanation: 
+The input string is <span style=color:#e6db74>&#34;()()&#34;</span>, with primitive decomposition <span style=color:#e6db74>&#34;()&#34;</span> + <span style=color:#e6db74>&#34;()&#34;</span>.
+After removing outer parentheses of each part, this is <span style=color:#e6db74>&#34;&#34;</span> + <span style=color:#e6db74>&#34;&#34;</span> <span style=color:#f92672>=</span> <span style=color:#e6db74>&#34;&#34;</span>.
+</code></pre></div><p><strong>Note</strong></p><ol><li><strong>S</strong>.length &lt;= 10000</li><li><strong>S</strong>[i] is &ldquo;(&rdquo; or &ldquo;)&rdquo;</li><li><strong>S</strong> is a valid parentheses string</li></ol><h4 id=solution>Solution</h4><ol><li>We start by ntialising a counter with 0.</li><li>Next, we scan the string char by char, from left to right.</li><li>Every time an open parentheses <strong>(</strong> is encountered, we increment the counter with 1 and if the count is already greator than 1 indicating (a possible exterior parentheses has already been found), we will add this parentheses to the output string builder.</li><li>when we encounter a closed parentheses <strong>)</strong>, we decrement the counter and if the counter is greator than 1 (indicating there is more than 1 open parentheses), we can safely add this character to the output string builder.</li><li>We return the output string after the loop is finished.</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+
+<span style=color:#f92672>import</span> (
+	<span style=color:#e6db74>&#34;fmt&#34;</span>
+	<span style=color:#e6db74>&#34;strings&#34;</span>
+)
+
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>removeOuterParentheses</span>(<span style=color:#a6e22e>S</span> <span style=color:#66d9ef>string</span>) <span style=color:#66d9ef>string</span> {
+	<span style=color:#66d9ef>var</span> <span style=color:#a6e22e>sb</span> <span style=color:#a6e22e>strings</span>.<span style=color:#a6e22e>Builder</span>
+	<span style=color:#a6e22e>count</span> <span style=color:#f92672>:=</span> <span style=color:#ae81ff>0</span>
+	<span style=color:#66d9ef>for</span> <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>c</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>range</span> <span style=color:#a6e22e>S</span> {
+
+		<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>c</span> <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;(&#39;</span> {
+			<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>count</span> &gt; <span style=color:#ae81ff>0</span> {
+				<span style=color:#a6e22e>sb</span>.<span style=color:#a6e22e>WriteString</span>(string(<span style=color:#a6e22e>c</span>))
+			}
+			<span style=color:#a6e22e>count</span><span style=color:#f92672>++</span>
+		}
+
+		<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>c</span> <span style=color:#f92672>==</span> <span style=color:#e6db74>&#39;)&#39;</span> {
+			<span style=color:#66d9ef>if</span> <span style=color:#a6e22e>count</span> &gt; <span style=color:#ae81ff>1</span> {
+				<span style=color:#a6e22e>sb</span>.<span style=color:#a6e22e>WriteString</span>(string(<span style=color:#a6e22e>c</span>))
+			}
+			<span style=color:#a6e22e>count</span><span style=color:#f92672>--</span>
+		}
+
+	}
+	<span style=color:#66d9ef>return</span> <span style=color:#a6e22e>sb</span>.<span style=color:#a6e22e>String</span>()
+}
+
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+	<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>removeOuterParentheses</span>(<span style=color:#e6db74>&#34;(()())(())&#34;</span>))
+}
+</code></pre></div></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2020 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','UA-16978408-4');</script></body></html>
