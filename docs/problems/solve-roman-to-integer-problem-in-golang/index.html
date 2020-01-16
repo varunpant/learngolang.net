@@ -2,8 +2,63 @@
 <a href=https://learngolang.net/tutorials>Archive</a>
 <a href=https://learngolang.net/tags>Tags</a>
 <a href=https://learngolang.net/about>About</a>
-<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>Roman to Integer</h1><h2 class=headline>Aug 12, 2019 07:20
-· 3 words
-· 1 minute read
-<span class=tags></span></h2></header><section id=post-body><h3 id=roman-to-integer>Roman to Integer</h3></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2020 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+<a class=cta href=https://learngolang.net/index.xml>Subscribe</a></nav><section id=wrapper class=post><article><header><h1>Roman to Integer</h1><h2 class=headline>Jan 16, 2020 07:20
+· 385 words
+· 2 minute read
+<span class=tags></span></h2></header><section id=post-body><h3 id=roman-to-integer>Roman to Integer</h3><h4 id=problem-statement>Problem Statement</h4><p>Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.</p><pre><code>Symbol       Value
+I             1
+V             5
+X             10
+L             50
+C             100
+D             500
+M             1000
+</code></pre><p>For example, two is written as <code>II</code> in Roman numeral, just two one's added together. Twelve is written as, <code>XII</code>, which is simply <code>X</code> + <code>II</code>. The number twenty seven is written as <code>XXVII</code>, which is <code>XX</code> + <code>V</code> + <code>II</code>.</p><p>Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:</p><ul><li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9.</li><li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90.</li><li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li></ul><p>Given a roman numeral, convert it to an integer. Input is guaranteed to be within the range from 1 to 3999.</p><p><strong>Example 1:</strong></p><pre><code>Input: &quot;III&quot;
+Output: 3
+</code></pre><p><strong>Example 2:</strong></p><pre><code>Input: &quot;IV&quot;
+Output: 4
+</code></pre><p><strong>Example 3:</strong></p><pre><code>Input: &quot;IX&quot;
+Output: 9
+</code></pre><p><strong>Example 4:</strong></p><pre><code>Input: &quot;LVIII&quot;
+Output: 58
+Explanation: L = 50, V= 5, III = 3.
+</code></pre><p><strong>Example 5:</strong></p><pre><code>Input: &quot;MCMXCIV&quot;
+Output: 1994
+Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
+</code></pre><h4 id=solution>Solution</h4><p>Iterate the string from left to right, while maintaining three variables, current, preventive and total. According to roman number rules, if the current variable is gator then previously encountered then <em><em>total = total - 2</em> prev</em>* , otherwise just keep on suing them as they are encountered. Note a map of individual numerals to numbers is maintained.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#f92672>package</span> <span style=color:#a6e22e>main</span>
+
+<span style=color:#f92672>import</span> <span style=color:#e6db74>&#34;fmt&#34;</span>
+
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>romanToInt</span>(<span style=color:#a6e22e>s</span> <span style=color:#66d9ef>string</span>) <span style=color:#66d9ef>int</span> {
+	<span style=color:#a6e22e>roman</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>map</span>[<span style=color:#66d9ef>string</span>]<span style=color:#66d9ef>int</span>{
+		<span style=color:#e6db74>&#34;I&#34;</span>: <span style=color:#ae81ff>1</span>,
+		<span style=color:#e6db74>&#34;V&#34;</span>: <span style=color:#ae81ff>5</span>,
+		<span style=color:#e6db74>&#34;X&#34;</span>: <span style=color:#ae81ff>10</span>,
+		<span style=color:#e6db74>&#34;L&#34;</span>: <span style=color:#ae81ff>50</span>,
+
+		<span style=color:#e6db74>&#34;C&#34;</span>: <span style=color:#ae81ff>100</span>,
+		<span style=color:#e6db74>&#34;D&#34;</span>: <span style=color:#ae81ff>500</span>,
+		<span style=color:#e6db74>&#34;M&#34;</span>: <span style=color:#ae81ff>1000</span>,
+	}
+	<span style=color:#a6e22e>prev</span>, <span style=color:#a6e22e>total</span> <span style=color:#f92672>:=</span> <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>0</span>
+	<span style=color:#66d9ef>for</span> <span style=color:#a6e22e>_</span>, <span style=color:#a6e22e>c</span> <span style=color:#f92672>:=</span> <span style=color:#66d9ef>range</span> <span style=color:#a6e22e>s</span> {
+		<span style=color:#a6e22e>curr</span> <span style=color:#f92672>:=</span> <span style=color:#a6e22e>roman</span>[string(<span style=color:#a6e22e>c</span>)]
+		<span style=color:#a6e22e>total</span> <span style=color:#f92672>+=</span> <span style=color:#a6e22e>curr</span>
+		
+      <span style=color:#66d9ef>if</span> <span style=color:#a6e22e>curr</span> &gt; <span style=color:#a6e22e>prev</span> {
+        <span style=color:#a6e22e>total</span> <span style=color:#f92672>-=</span> <span style=color:#ae81ff>2</span> <span style=color:#f92672>*</span> <span style=color:#a6e22e>prev</span>
+      }
+      <span style=color:#a6e22e>prev</span> = <span style=color:#a6e22e>curr</span>
+
+	}
+	<span style=color:#66d9ef>return</span> <span style=color:#a6e22e>total</span>
+}
+<span style=color:#66d9ef>func</span> <span style=color:#a6e22e>main</span>() {
+
+	<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>romanToInt</span>(<span style=color:#e6db74>&#34;LVIII&#34;</span>))
+	<span style=color:#a6e22e>fmt</span>.<span style=color:#a6e22e>Println</span>(<span style=color:#a6e22e>romanToInt</span>(<span style=color:#e6db74>&#34;IX&#34;</span>))
+
+}
+
+</code></pre></div></section></article><div id=disqus_thread></div><script type=text/javascript>var disqus_shortname='learngolang-net';(function(){var dsq=document.createElement('script');dsq.type='text/javascript';dsq.async=true;dsq.src='//'+disqus_shortname+'.disqus.com/embed.js';(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(dsq);})();</script><noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript></div><footer id=footer><p class=small>© Copyright 2020 <i class="fa fa-heart" aria-hidden=true></i>gopher</p><p class=small>Powered by <a href=http://www.gohugo.io/>Hugo</a> Theme By <a href=https://github.com/varunpant/hugo-theme-bakasura>Bakasura</a></p></footer></section><script src=https://learngolang.net/js/jquery-3.3.1.min.js></script><script src=https://learngolang.net/js/main.js></script><script src=https://learngolang.net/js/highlight.min.js></script><script>hljs.initHighlightingOnLoad();</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-16978408-4"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
 gtag('js',new Date());gtag('config','UA-16978408-4');</script></body></html>
